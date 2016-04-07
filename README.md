@@ -38,6 +38,6 @@ Be warned: this was a pretty depressing data set. I went in with the question of
 
 The code is in [`homeless.r`](homeless.r) and I've included U.S. population data for the necessary time period.
 
-Remember, go in with a good question or two, augment as you feel you need to and show us your vis!
+Remember, this is language/tool agnostic & go in with a good question or two, augment as you feel you need to and show us your vis!
 
 Week 2's content closes 2016-04-12 23:59 EDT
