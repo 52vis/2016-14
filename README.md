@@ -26,7 +26,7 @@ I'll be announcing the winner on Thursday since I:
 - have been traveling like mad this week
 - need to wrangle all the answers into the github repo and get @laneharrison (and his students) to validate my choice for winner (I have picked a winner)
 
-Given how hard the wrangling has been, I'm going to need to request that folks both leave a blog comment and file a PR to [the github repo](https://github.com/brudis-r7/2016-14) for this week. Please include the code you used as well as the vis (or a link to a working interactive vis)
+Given how hard the wrangling has been, I'm going to need to request that folks both leave a blog comment and file a PR to [the github repo](https://github.com/52vis/2016-14) for this week. Please include the code you used as well as the vis (or a link to a working interactive vis)
 
 ### PRIZES UPDATE
 
