@@ -1,4 +1,12 @@
-### 52Vis Week 2 (2016-14)
+## 52Vis Week 2 (2016-14)
+
+### Why 52Vis?
+
+In case folks are wondering why I'm doing this, it's pretty simple. We need a society that has high data literacy and we need folks who are capable of making awesome, truthful data visualizations. The only way to do that is by working with data over, and over, and over, and over again. 
+
+Directed projects with some reward are one of the best Pavlovian ways to accomplish that :-)
+
+### This week's challenge
 
 The Data is Plural folks have [done it again](http://tinyletter.com/data-is-plural/letters/data-is-plural-2016-04-06-edition) and there's a neat and important data set in this week's vis challenge.
 
@@ -18,7 +26,7 @@ I'll be announcing the winner on Thursday since I:
 - have been traveling like mad this week
 - need to wrangle all the answers into the github repo and get @laneharrison (and his students) to validate my choice for winner (I have picked a winner)
 
-Given how hard the wrangling has been, I'm going to need to request that folks both leave a comment and issue a PR to [the github repo](https://github.com/brudis-r7/2016-14) for this week. Please include the code you used as well as the vis (or a link to a working interactive vis)
+Given how hard the wrangling has been, I'm going to need to request that folks both leave a blog comment and file a PR to [the github repo](https://github.com/brudis-r7/2016-14) for this week. Please include the code you used as well as the vis (or a link to a working interactive vis)
 
 ### PRIZES UPDATE
 
