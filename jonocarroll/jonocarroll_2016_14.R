@@ -7,6 +7,8 @@
 ## load relevant packages
 pacman::p_load(magrittr, dplyr, tidyr, ggplot2, httr, readxl)
 
+setwd("jonocarroll")
+
 ## load the data from hudexchange.info (download once)
 # URL <- "https://www.hudexchange.info/resources/documents/2007-2015-PIT-Counts-by-CoC.xlsx"
 # GET(URL, write_disk("homeless.xlsx", overwrite=TRUE))
