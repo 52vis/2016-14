@@ -1,0 +1,27 @@
+{
+  "2011": {
+    "homeless_per_100k_max": 83,
+    "sheltered_per_100k": 78.97,
+    "unsheltered_per_100k": 26.77
+  },
+  "2012": {
+    "homeless_per_100k_max": 83.58,
+    "sheltered_per_100k": 73.35,
+    "unsheltered_per_100k": 31.71
+  },
+  "2013": {
+    "homeless_per_100k_max": 76.82,
+    "sheltered_per_100k": 66.97,
+    "unsheltered_per_100k": 25.01
+  },
+  "2014": {
+    "homeless_per_100k_max": 61.53,
+    "sheltered_per_100k": 56.83,
+    "unsheltered_per_100k": 24.36
+  },
+  "2015": {
+    "homeless_per_100k_max": 60.69,
+    "sheltered_per_100k": 54.45,
+    "unsheltered_per_100k": 29.13
+  }
+}

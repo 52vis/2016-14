@@ -1,0 +1,2307 @@
+{
+  "2011": {
+    "AL": {
+      "homeless_veterans": 659,
+      "homeless_veterans_sheltered": 387,
+      "homeless_veterans_unsheltered": 272,
+      "state_population": 4801108,
+      "homeless_per_100k": 13.73,
+      "sheltered_per_100k": 8.06,
+      "unsheltered_per_100k": 5.67
+    },
+    "AK": {
+      "homeless_veterans": 288,
+      "homeless_veterans_sheltered": 236,
+      "homeless_veterans_unsheltered": 52,
+      "state_population": 722720,
+      "homeless_per_100k": 39.85,
+      "sheltered_per_100k": 32.65,
+      "unsheltered_per_100k": 7.2
+    },
+    "AZ": {
+      "homeless_veterans": 1528,
+      "homeless_veterans_sheltered": 1018,
+      "homeless_veterans_unsheltered": 510,
+      "state_population": 6468732,
+      "homeless_per_100k": 23.62,
+      "sheltered_per_100k": 15.74,
+      "unsheltered_per_100k": 7.88
+    },
+    "AR": {
+      "homeless_veterans": 411,
+      "homeless_veterans_sheltered": 268,
+      "homeless_veterans_unsheltered": 143,
+      "state_population": 2938538,
+      "homeless_per_100k": 13.99,
+      "sheltered_per_100k": 9.12,
+      "unsheltered_per_100k": 4.87
+    },
+    "CA": {
+      "homeless_veterans": 16783,
+      "homeless_veterans_sheltered": 6689,
+      "homeless_veterans_unsheltered": 10094,
+      "state_population": 37700034,
+      "homeless_per_100k": 44.52,
+      "sheltered_per_100k": 17.74,
+      "unsheltered_per_100k": 26.77
+    },
+    "CO": {
+      "homeless_veterans": 2074,
+      "homeless_veterans_sheltered": 1381,
+      "homeless_veterans_unsheltered": 693,
+      "state_population": 5119480,
+      "homeless_per_100k": 40.51,
+      "sheltered_per_100k": 26.98,
+      "unsheltered_per_100k": 13.54
+    },
+    "CT": {
+      "homeless_veterans": 443,
+      "homeless_veterans_sheltered": 396,
+      "homeless_veterans_unsheltered": 47,
+      "state_population": 3589759,
+      "homeless_per_100k": 12.34,
+      "sheltered_per_100k": 11.03,
+      "unsheltered_per_100k": 1.31
+    },
+    "DE": {
+      "homeless_veterans": 55,
+      "homeless_veterans_sheltered": 53,
+      "homeless_veterans_unsheltered": 2,
+      "state_population": 907916,
+      "homeless_per_100k": 6.06,
+      "sheltered_per_100k": 5.84,
+      "unsheltered_per_100k": 0.22
+    },
+    "DC": {
+      "homeless_veterans": 515,
+      "homeless_veterans_sheltered": 490,
+      "homeless_veterans_unsheltered": 25,
+      "state_population": 620472,
+      "homeless_per_100k": 83,
+      "sheltered_per_100k": 78.97,
+      "unsheltered_per_100k": 4.03
+    },
+    "FL": {
+      "homeless_veterans": 5644,
+      "homeless_veterans_sheltered": 2276,
+      "homeless_veterans_unsheltered": 3368,
+      "state_population": 19105533,
+      "homeless_per_100k": 29.54,
+      "sheltered_per_100k": 11.91,
+      "unsheltered_per_100k": 17.63
+    },
+    "GA": {
+      "homeless_veterans": 2243,
+      "homeless_veterans_sheltered": 1025,
+      "homeless_veterans_unsheltered": 1218,
+      "state_population": 9812280,
+      "homeless_per_100k": 22.86,
+      "sheltered_per_100k": 10.45,
+      "unsheltered_per_100k": 12.41
+    },
+    "HI": {
+      "homeless_veterans": 505,
+      "homeless_veterans_sheltered": 210,
+      "homeless_veterans_unsheltered": 295,
+      "state_population": 1378227,
+      "homeless_per_100k": 36.64,
+      "sheltered_per_100k": 15.24,
+      "unsheltered_per_100k": 21.4
+    },
+    "ID": {
+      "homeless_veterans": 250,
+      "homeless_veterans_sheltered": 169,
+      "homeless_veterans_unsheltered": 81,
+      "state_population": 1584134,
+      "homeless_per_100k": 15.78,
+      "sheltered_per_100k": 10.67,
+      "unsheltered_per_100k": 5.11
+    },
+    "IL": {
+      "homeless_veterans": 1081,
+      "homeless_veterans_sheltered": 765,
+      "homeless_veterans_unsheltered": 316,
+      "state_population": 12861882,
+      "homeless_per_100k": 8.4,
+      "sheltered_per_100k": 5.95,
+      "unsheltered_per_100k": 2.46
+    },
+    "IN": {
+      "homeless_veterans": 714,
+      "homeless_veterans_sheltered": 638,
+      "homeless_veterans_unsheltered": 76,
+      "state_population": 6516845,
+      "homeless_per_100k": 10.96,
+      "sheltered_per_100k": 9.79,
+      "unsheltered_per_100k": 1.17
+    },
+    "IA": {
+      "homeless_veterans": 267,
+      "homeless_veterans_sheltered": 255,
+      "homeless_veterans_unsheltered": 12,
+      "state_population": 3065389,
+      "homeless_per_100k": 8.71,
+      "sheltered_per_100k": 8.32,
+      "unsheltered_per_100k": 0.39
+    },
+    "KS": {
+      "homeless_veterans": 384,
+      "homeless_veterans_sheltered": 342,
+      "homeless_veterans_unsheltered": 42,
+      "state_population": 2869917,
+      "homeless_per_100k": 13.38,
+      "sheltered_per_100k": 11.92,
+      "unsheltered_per_100k": 1.46
+    },
+    "KY": {
+      "homeless_veterans": 636,
+      "homeless_veterans_sheltered": 579,
+      "homeless_veterans_unsheltered": 57,
+      "state_population": 4367882,
+      "homeless_per_100k": 14.56,
+      "sheltered_per_100k": 13.26,
+      "unsheltered_per_100k": 1.3
+    },
+    "LA": {
+      "homeless_veterans": 950,
+      "homeless_veterans_sheltered": 443,
+      "homeless_veterans_unsheltered": 507,
+      "state_population": 4575381,
+      "homeless_per_100k": 20.76,
+      "sheltered_per_100k": 9.68,
+      "unsheltered_per_100k": 11.08
+    },
+    "ME": {
+      "homeless_veterans": 127,
+      "homeless_veterans_sheltered": 121,
+      "homeless_veterans_unsheltered": 6,
+      "state_population": 1328257,
+      "homeless_per_100k": 9.56,
+      "sheltered_per_100k": 9.11,
+      "unsheltered_per_100k": 0.45
+    },
+    "MD": {
+      "homeless_veterans": 696,
+      "homeless_veterans_sheltered": 577,
+      "homeless_veterans_unsheltered": 119,
+      "state_population": 5844171,
+      "homeless_per_100k": 11.91,
+      "sheltered_per_100k": 9.87,
+      "unsheltered_per_100k": 2.04
+    },
+    "MA": {
+      "homeless_veterans": 1268,
+      "homeless_veterans_sheltered": 1210,
+      "homeless_veterans_unsheltered": 58,
+      "state_population": 6611797,
+      "homeless_per_100k": 19.18,
+      "sheltered_per_100k": 18.3,
+      "unsheltered_per_100k": 0.88
+    },
+    "MI": {
+      "homeless_veterans": 959,
+      "homeless_veterans_sheltered": 755,
+      "homeless_veterans_unsheltered": 204,
+      "state_population": 9876589,
+      "homeless_per_100k": 9.71,
+      "sheltered_per_100k": 7.64,
+      "unsheltered_per_100k": 2.07
+    },
+    "MN": {
+      "homeless_veterans": 449,
+      "homeless_veterans_sheltered": 371,
+      "homeless_veterans_unsheltered": 78,
+      "state_population": 5348119,
+      "homeless_per_100k": 8.4,
+      "sheltered_per_100k": 6.94,
+      "unsheltered_per_100k": 1.46
+    },
+    "MS": {
+      "homeless_veterans": 205,
+      "homeless_veterans_sheltered": 114,
+      "homeless_veterans_unsheltered": 91,
+      "state_population": 2977999,
+      "homeless_per_100k": 6.88,
+      "sheltered_per_100k": 3.83,
+      "unsheltered_per_100k": 3.06
+    },
+    "MO": {
+      "homeless_veterans": 852,
+      "homeless_veterans_sheltered": 627,
+      "homeless_veterans_unsheltered": 225,
+      "state_population": 6010587,
+      "homeless_per_100k": 14.17,
+      "sheltered_per_100k": 10.43,
+      "unsheltered_per_100k": 3.74
+    },
+    "MT": {
+      "homeless_veterans": 251,
+      "homeless_veterans_sheltered": 135,
+      "homeless_veterans_unsheltered": 116,
+      "state_population": 997746,
+      "homeless_per_100k": 25.16,
+      "sheltered_per_100k": 13.53,
+      "unsheltered_per_100k": 11.63
+    },
+    "NE": {
+      "homeless_veterans": 310,
+      "homeless_veterans_sheltered": 253,
+      "homeless_veterans_unsheltered": 57,
+      "state_population": 1842383,
+      "homeless_per_100k": 16.83,
+      "sheltered_per_100k": 13.73,
+      "unsheltered_per_100k": 3.09
+    },
+    "NV": {
+      "homeless_veterans": 1240,
+      "homeless_veterans_sheltered": 692,
+      "homeless_veterans_unsheltered": 548,
+      "state_population": 2718819,
+      "homeless_per_100k": 45.61,
+      "sheltered_per_100k": 25.45,
+      "unsheltered_per_100k": 20.16
+    },
+    "NH": {
+      "homeless_veterans": 126,
+      "homeless_veterans_sheltered": 118,
+      "homeless_veterans_unsheltered": 8,
+      "state_population": 1318344,
+      "homeless_per_100k": 9.56,
+      "sheltered_per_100k": 8.95,
+      "unsheltered_per_100k": 0.61
+    },
+    "NJ": {
+      "homeless_veterans": 811,
+      "homeless_veterans_sheltered": 668,
+      "homeless_veterans_unsheltered": 143,
+      "state_population": 8842934,
+      "homeless_per_100k": 9.17,
+      "sheltered_per_100k": 7.55,
+      "unsheltered_per_100k": 1.62
+    },
+    "NM": {
+      "homeless_veterans": 364,
+      "homeless_veterans_sheltered": 221,
+      "homeless_veterans_unsheltered": 143,
+      "state_population": 2078226,
+      "homeless_per_100k": 17.51,
+      "sheltered_per_100k": 10.63,
+      "unsheltered_per_100k": 6.88
+    },
+    "NY": {
+      "homeless_veterans": 5765,
+      "homeless_veterans_sheltered": 5246,
+      "homeless_veterans_unsheltered": 519,
+      "state_population": 19523202,
+      "homeless_per_100k": 29.53,
+      "sheltered_per_100k": 26.87,
+      "unsheltered_per_100k": 2.66
+    },
+    "NC": {
+      "homeless_veterans": 1248,
+      "homeless_veterans_sheltered": 941,
+      "homeless_veterans_unsheltered": 307,
+      "state_population": 9651025,
+      "homeless_per_100k": 12.93,
+      "sheltered_per_100k": 9.75,
+      "unsheltered_per_100k": 3.18
+    },
+    "ND": {
+      "homeless_veterans": 124,
+      "homeless_veterans_sheltered": 121,
+      "homeless_veterans_unsheltered": 3,
+      "state_population": 685326,
+      "homeless_per_100k": 18.09,
+      "sheltered_per_100k": 17.66,
+      "unsheltered_per_100k": 0.44
+    },
+    "OH": {
+      "homeless_veterans": 1279,
+      "homeless_veterans_sheltered": 1083,
+      "homeless_veterans_unsheltered": 196,
+      "state_population": 11545442,
+      "homeless_per_100k": 11.08,
+      "sheltered_per_100k": 9.38,
+      "unsheltered_per_100k": 1.7
+    },
+    "OK": {
+      "homeless_veterans": 356,
+      "homeless_veterans_sheltered": 301,
+      "homeless_veterans_unsheltered": 55,
+      "state_population": 3786626,
+      "homeless_per_100k": 9.4,
+      "sheltered_per_100k": 7.95,
+      "unsheltered_per_100k": 1.45
+    },
+    "OR": {
+      "homeless_veterans": 1474,
+      "homeless_veterans_sheltered": 655,
+      "homeless_veterans_unsheltered": 819,
+      "state_population": 3868509,
+      "homeless_per_100k": 38.1,
+      "sheltered_per_100k": 16.93,
+      "unsheltered_per_100k": 21.17
+    },
+    "PA": {
+      "homeless_veterans": 1392,
+      "homeless_veterans_sheltered": 1262,
+      "homeless_veterans_unsheltered": 130,
+      "state_population": 12745202,
+      "homeless_per_100k": 10.92,
+      "sheltered_per_100k": 9.9,
+      "unsheltered_per_100k": 1.02
+    },
+    "RI": {
+      "homeless_veterans": 123,
+      "homeless_veterans_sheltered": 121,
+      "homeless_veterans_unsheltered": 2,
+      "state_population": 1051856,
+      "homeless_per_100k": 11.69,
+      "sheltered_per_100k": 11.5,
+      "unsheltered_per_100k": 0.19
+    },
+    "SC": {
+      "homeless_veterans": 612,
+      "homeless_veterans_sheltered": 389,
+      "homeless_veterans_unsheltered": 223,
+      "state_population": 4672733,
+      "homeless_per_100k": 13.1,
+      "sheltered_per_100k": 8.32,
+      "unsheltered_per_100k": 4.77
+    },
+    "SD": {
+      "homeless_veterans": 109,
+      "homeless_veterans_sheltered": 99,
+      "homeless_veterans_unsheltered": 10,
+      "state_population": 824289,
+      "homeless_per_100k": 13.22,
+      "sheltered_per_100k": 12.01,
+      "unsheltered_per_100k": 1.21
+    },
+    "TN": {
+      "homeless_veterans": 965,
+      "homeless_veterans_sheltered": 732,
+      "homeless_veterans_unsheltered": 233,
+      "state_population": 6398408,
+      "homeless_per_100k": 15.08,
+      "sheltered_per_100k": 11.44,
+      "unsheltered_per_100k": 3.64
+    },
+    "TX": {
+      "homeless_veterans": 4891,
+      "homeless_veterans_sheltered": 2365,
+      "homeless_veterans_unsheltered": 2526,
+      "state_population": 25654464,
+      "homeless_per_100k": 19.06,
+      "sheltered_per_100k": 9.22,
+      "unsheltered_per_100k": 9.85
+    },
+    "UT": {
+      "homeless_veterans": 345,
+      "homeless_veterans_sheltered": 310,
+      "homeless_veterans_unsheltered": 35,
+      "state_population": 2816440,
+      "homeless_per_100k": 12.25,
+      "sheltered_per_100k": 11.01,
+      "unsheltered_per_100k": 1.24
+    },
+    "VT": {
+      "homeless_veterans": 81,
+      "homeless_veterans_sheltered": 75,
+      "homeless_veterans_unsheltered": 6,
+      "state_population": 626687,
+      "homeless_per_100k": 12.93,
+      "sheltered_per_100k": 11.97,
+      "unsheltered_per_100k": 0.96
+    },
+    "VA": {
+      "homeless_veterans": 931,
+      "homeless_veterans_sheltered": 768,
+      "homeless_veterans_unsheltered": 163,
+      "state_population": 8110783,
+      "homeless_per_100k": 11.48,
+      "sheltered_per_100k": 9.47,
+      "unsheltered_per_100k": 2.01
+    },
+    "WA": {
+      "homeless_veterans": 1478,
+      "homeless_veterans_sheltered": 1167,
+      "homeless_veterans_unsheltered": 311,
+      "state_population": 6823229,
+      "homeless_per_100k": 21.66,
+      "sheltered_per_100k": 17.1,
+      "unsheltered_per_100k": 4.56
+    },
+    "WV": {
+      "homeless_veterans": 302,
+      "homeless_veterans_sheltered": 236,
+      "homeless_veterans_unsheltered": 66,
+      "state_population": 1854948,
+      "homeless_per_100k": 16.28,
+      "sheltered_per_100k": 12.72,
+      "unsheltered_per_100k": 3.56
+    },
+    "WI": {
+      "homeless_veterans": 607,
+      "homeless_veterans_sheltered": 584,
+      "homeless_veterans_unsheltered": 23,
+      "state_population": 5709720,
+      "homeless_per_100k": 10.63,
+      "sheltered_per_100k": 10.23,
+      "unsheltered_per_100k": 0.4
+    },
+    "WY": {
+      "homeless_veterans": 83,
+      "homeless_veterans_sheltered": 39,
+      "homeless_veterans_unsheltered": 44,
+      "state_population": 567768,
+      "homeless_per_100k": 14.62,
+      "sheltered_per_100k": 6.87,
+      "unsheltered_per_100k": 7.75
+    }
+  },
+  "2012": {
+    "AL": {
+      "homeless_veterans": 526,
+      "homeless_veterans_sheltered": 377,
+      "homeless_veterans_unsheltered": 149,
+      "state_population": 4816089,
+      "homeless_per_100k": 10.92,
+      "sheltered_per_100k": 7.83,
+      "unsheltered_per_100k": 3.09
+    },
+    "AK": {
+      "homeless_veterans": 256,
+      "homeless_veterans_sheltered": 227,
+      "homeless_veterans_unsheltered": 29,
+      "state_population": 731228,
+      "homeless_per_100k": 35.01,
+      "sheltered_per_100k": 31.04,
+      "unsheltered_per_100k": 3.97
+    },
+    "AZ": {
+      "homeless_veterans": 1478,
+      "homeless_veterans_sheltered": 1007,
+      "homeless_veterans_unsheltered": 471,
+      "state_population": 6553262,
+      "homeless_per_100k": 22.55,
+      "sheltered_per_100k": 15.37,
+      "unsheltered_per_100k": 7.19
+    },
+    "AR": {
+      "homeless_veterans": 362,
+      "homeless_veterans_sheltered": 205,
+      "homeless_veterans_unsheltered": 157,
+      "state_population": 2949499,
+      "homeless_per_100k": 12.27,
+      "sheltered_per_100k": 6.95,
+      "unsheltered_per_100k": 5.32
+    },
+    "CA": {
+      "homeless_veterans": 14611,
+      "homeless_veterans_sheltered": 4512,
+      "homeless_veterans_unsheltered": 10099,
+      "state_population": 38056055,
+      "homeless_per_100k": 38.39,
+      "sheltered_per_100k": 11.86,
+      "unsheltered_per_100k": 26.54
+    },
+    "CO": {
+      "homeless_veterans": 1512,
+      "homeless_veterans_sheltered": 800,
+      "homeless_veterans_unsheltered": 712,
+      "state_population": 5191731,
+      "homeless_per_100k": 29.12,
+      "sheltered_per_100k": 15.41,
+      "unsheltered_per_100k": 13.71
+    },
+    "CT": {
+      "homeless_veterans": 332,
+      "homeless_veterans_sheltered": 285,
+      "homeless_veterans_unsheltered": 47,
+      "state_population": 3593541,
+      "homeless_per_100k": 9.24,
+      "sheltered_per_100k": 7.93,
+      "unsheltered_per_100k": 1.31
+    },
+    "DE": {
+      "homeless_veterans": 66,
+      "homeless_veterans_sheltered": 64,
+      "homeless_veterans_unsheltered": 2,
+      "state_population": 917099,
+      "homeless_per_100k": 7.2,
+      "sheltered_per_100k": 6.98,
+      "unsheltered_per_100k": 0.22
+    },
+    "DC": {
+      "homeless_veterans": 531,
+      "homeless_veterans_sheltered": 466,
+      "homeless_veterans_unsheltered": 65,
+      "state_population": 635342,
+      "homeless_per_100k": 83.58,
+      "sheltered_per_100k": 73.35,
+      "unsheltered_per_100k": 10.23
+    },
+    "FL": {
+      "homeless_veterans": 5331,
+      "homeless_veterans_sheltered": 2201,
+      "homeless_veterans_unsheltered": 3130,
+      "state_population": 19352021,
+      "homeless_per_100k": 27.55,
+      "sheltered_per_100k": 11.37,
+      "unsheltered_per_100k": 16.17
+    },
+    "GA": {
+      "homeless_veterans": 2297,
+      "homeless_veterans_sheltered": 1094,
+      "homeless_veterans_unsheltered": 1203,
+      "state_population": 9917639,
+      "homeless_per_100k": 23.16,
+      "sheltered_per_100k": 11.03,
+      "unsheltered_per_100k": 12.13
+    },
+    "HI": {
+      "homeless_veterans": 507,
+      "homeless_veterans_sheltered": 230,
+      "homeless_veterans_unsheltered": 277,
+      "state_population": 1392641,
+      "homeless_per_100k": 36.41,
+      "sheltered_per_100k": 16.52,
+      "unsheltered_per_100k": 19.89
+    },
+    "ID": {
+      "homeless_veterans": 260,
+      "homeless_veterans_sheltered": 184,
+      "homeless_veterans_unsheltered": 76,
+      "state_population": 1596097,
+      "homeless_per_100k": 16.29,
+      "sheltered_per_100k": 11.53,
+      "unsheltered_per_100k": 4.76
+    },
+    "IL": {
+      "homeless_veterans": 1147,
+      "homeless_veterans_sheltered": 813,
+      "homeless_veterans_unsheltered": 334,
+      "state_population": 12875167,
+      "homeless_per_100k": 8.91,
+      "sheltered_per_100k": 6.31,
+      "unsheltered_per_100k": 2.59
+    },
+    "IN": {
+      "homeless_veterans": 687,
+      "homeless_veterans_sheltered": 547,
+      "homeless_veterans_unsheltered": 140,
+      "state_population": 6538283,
+      "homeless_per_100k": 10.51,
+      "sheltered_per_100k": 8.37,
+      "unsheltered_per_100k": 2.14
+    },
+    "IA": {
+      "homeless_veterans": 217,
+      "homeless_veterans_sheltered": 205,
+      "homeless_veterans_unsheltered": 12,
+      "state_population": 3076636,
+      "homeless_per_100k": 7.05,
+      "sheltered_per_100k": 6.66,
+      "unsheltered_per_100k": 0.39
+    },
+    "KS": {
+      "homeless_veterans": 373,
+      "homeless_veterans_sheltered": 329,
+      "homeless_veterans_unsheltered": 44,
+      "state_population": 2886281,
+      "homeless_per_100k": 12.92,
+      "sheltered_per_100k": 11.4,
+      "unsheltered_per_100k": 1.52
+    },
+    "KY": {
+      "homeless_veterans": 440,
+      "homeless_veterans_sheltered": 369,
+      "homeless_veterans_unsheltered": 71,
+      "state_population": 4382667,
+      "homeless_per_100k": 10.04,
+      "sheltered_per_100k": 8.42,
+      "unsheltered_per_100k": 1.62
+    },
+    "LA": {
+      "homeless_veterans": 899,
+      "homeless_veterans_sheltered": 450,
+      "homeless_veterans_unsheltered": 449,
+      "state_population": 4603676,
+      "homeless_per_100k": 19.53,
+      "sheltered_per_100k": 9.77,
+      "unsheltered_per_100k": 9.75
+    },
+    "ME": {
+      "homeless_veterans": 116,
+      "homeless_veterans_sheltered": 116,
+      "homeless_veterans_unsheltered": 0,
+      "state_population": 1328888,
+      "homeless_per_100k": 8.73,
+      "sheltered_per_100k": 8.73,
+      "unsheltered_per_100k": 0
+    },
+    "MD": {
+      "homeless_veterans": 617,
+      "homeless_veterans_sheltered": 513,
+      "homeless_veterans_unsheltered": 104,
+      "state_population": 5890740,
+      "homeless_per_100k": 10.47,
+      "sheltered_per_100k": 8.71,
+      "unsheltered_per_100k": 1.77
+    },
+    "MA": {
+      "homeless_veterans": 1181,
+      "homeless_veterans_sheltered": 1126,
+      "homeless_veterans_unsheltered": 55,
+      "state_population": 6657780,
+      "homeless_per_100k": 17.74,
+      "sheltered_per_100k": 16.91,
+      "unsheltered_per_100k": 0.83
+    },
+    "MI": {
+      "homeless_veterans": 1017,
+      "homeless_veterans_sheltered": 835,
+      "homeless_veterans_unsheltered": 182,
+      "state_population": 9886879,
+      "homeless_per_100k": 10.29,
+      "sheltered_per_100k": 8.45,
+      "unsheltered_per_100k": 1.84
+    },
+    "MN": {
+      "homeless_veterans": 309,
+      "homeless_veterans_sheltered": 243,
+      "homeless_veterans_unsheltered": 66,
+      "state_population": 5380443,
+      "homeless_per_100k": 5.74,
+      "sheltered_per_100k": 4.52,
+      "unsheltered_per_100k": 1.23
+    },
+    "MS": {
+      "homeless_veterans": 244,
+      "homeless_veterans_sheltered": 71,
+      "homeless_veterans_unsheltered": 173,
+      "state_population": 2985660,
+      "homeless_per_100k": 8.17,
+      "sheltered_per_100k": 2.38,
+      "unsheltered_per_100k": 5.79
+    },
+    "MO": {
+      "homeless_veterans": 899,
+      "homeless_veterans_sheltered": 714,
+      "homeless_veterans_unsheltered": 185,
+      "state_population": 6025468,
+      "homeless_per_100k": 14.92,
+      "sheltered_per_100k": 11.85,
+      "unsheltered_per_100k": 3.07
+    },
+    "MT": {
+      "homeless_veterans": 323,
+      "homeless_veterans_sheltered": 147,
+      "homeless_veterans_unsheltered": 176,
+      "state_population": 1005157,
+      "homeless_per_100k": 32.13,
+      "sheltered_per_100k": 14.62,
+      "unsheltered_per_100k": 17.51
+    },
+    "NE": {
+      "homeless_veterans": 249,
+      "homeless_veterans_sheltered": 213,
+      "homeless_veterans_unsheltered": 36,
+      "state_population": 1855973,
+      "homeless_per_100k": 13.42,
+      "sheltered_per_100k": 11.48,
+      "unsheltered_per_100k": 1.94
+    },
+    "NV": {
+      "homeless_veterans": 1229,
+      "homeless_veterans_sheltered": 691,
+      "homeless_veterans_unsheltered": 538,
+      "state_population": 2754874,
+      "homeless_per_100k": 44.61,
+      "sheltered_per_100k": 25.08,
+      "unsheltered_per_100k": 19.53
+    },
+    "NH": {
+      "homeless_veterans": 127,
+      "homeless_veterans_sheltered": 116,
+      "homeless_veterans_unsheltered": 11,
+      "state_population": 1321393,
+      "homeless_per_100k": 9.61,
+      "sheltered_per_100k": 8.78,
+      "unsheltered_per_100k": 0.83
+    },
+    "NJ": {
+      "homeless_veterans": 592,
+      "homeless_veterans_sheltered": 465,
+      "homeless_veterans_unsheltered": 127,
+      "state_population": 8874893,
+      "homeless_per_100k": 6.67,
+      "sheltered_per_100k": 5.24,
+      "unsheltered_per_100k": 1.43
+    },
+    "NM": {
+      "homeless_veterans": 345,
+      "homeless_veterans_sheltered": 202,
+      "homeless_veterans_unsheltered": 143,
+      "state_population": 2084792,
+      "homeless_per_100k": 16.55,
+      "sheltered_per_100k": 9.69,
+      "unsheltered_per_100k": 6.86
+    },
+    "NY": {
+      "homeless_veterans": 4961,
+      "homeless_veterans_sheltered": 4370,
+      "homeless_veterans_unsheltered": 591,
+      "state_population": 19606981,
+      "homeless_per_100k": 25.3,
+      "sheltered_per_100k": 22.29,
+      "unsheltered_per_100k": 3.01
+    },
+    "NC": {
+      "homeless_veterans": 1413,
+      "homeless_veterans_sheltered": 1091,
+      "homeless_veterans_unsheltered": 322,
+      "state_population": 9747021,
+      "homeless_per_100k": 14.5,
+      "sheltered_per_100k": 11.19,
+      "unsheltered_per_100k": 3.3
+    },
+    "ND": {
+      "homeless_veterans": 160,
+      "homeless_veterans_sheltered": 144,
+      "homeless_veterans_unsheltered": 16,
+      "state_population": 702265,
+      "homeless_per_100k": 22.78,
+      "sheltered_per_100k": 20.51,
+      "unsheltered_per_100k": 2.28
+    },
+    "OH": {
+      "homeless_veterans": 1244,
+      "homeless_veterans_sheltered": 1034,
+      "homeless_veterans_unsheltered": 210,
+      "state_population": 11551783,
+      "homeless_per_100k": 10.77,
+      "sheltered_per_100k": 8.95,
+      "unsheltered_per_100k": 1.82
+    },
+    "OK": {
+      "homeless_veterans": 404,
+      "homeless_veterans_sheltered": 299,
+      "homeless_veterans_unsheltered": 105,
+      "state_population": 3817679,
+      "homeless_per_100k": 10.58,
+      "sheltered_per_100k": 7.83,
+      "unsheltered_per_100k": 2.75
+    },
+    "OR": {
+      "homeless_veterans": 1356,
+      "homeless_veterans_sheltered": 558,
+      "homeless_veterans_unsheltered": 798,
+      "state_population": 3899444,
+      "homeless_per_100k": 34.77,
+      "sheltered_per_100k": 14.31,
+      "unsheltered_per_100k": 20.46
+    },
+    "PA": {
+      "homeless_veterans": 1456,
+      "homeless_veterans_sheltered": 1321,
+      "homeless_veterans_unsheltered": 135,
+      "state_population": 12772789,
+      "homeless_per_100k": 11.4,
+      "sheltered_per_100k": 10.34,
+      "unsheltered_per_100k": 1.06
+    },
+    "RI": {
+      "homeless_veterans": 96,
+      "homeless_veterans_sheltered": 96,
+      "homeless_veterans_unsheltered": 0,
+      "state_population": 1052393,
+      "homeless_per_100k": 9.12,
+      "sheltered_per_100k": 9.12,
+      "unsheltered_per_100k": 0
+    },
+    "SC": {
+      "homeless_veterans": 543,
+      "homeless_veterans_sheltered": 320,
+      "homeless_veterans_unsheltered": 223,
+      "state_population": 4721341,
+      "homeless_per_100k": 11.5,
+      "sheltered_per_100k": 6.78,
+      "unsheltered_per_100k": 4.72
+    },
+    "SD": {
+      "homeless_veterans": 124,
+      "homeless_veterans_sheltered": 114,
+      "homeless_veterans_unsheltered": 10,
+      "state_population": 834631,
+      "homeless_per_100k": 14.86,
+      "sheltered_per_100k": 13.66,
+      "unsheltered_per_100k": 1.2
+    },
+    "TN": {
+      "homeless_veterans": 1285,
+      "homeless_veterans_sheltered": 973,
+      "homeless_veterans_unsheltered": 312,
+      "state_population": 6455469,
+      "homeless_per_100k": 19.91,
+      "sheltered_per_100k": 15.07,
+      "unsheltered_per_100k": 4.83
+    },
+    "TX": {
+      "homeless_veterans": 4364,
+      "homeless_veterans_sheltered": 1884,
+      "homeless_veterans_unsheltered": 2480,
+      "state_population": 26089741,
+      "homeless_per_100k": 16.73,
+      "sheltered_per_100k": 7.22,
+      "unsheltered_per_100k": 9.51
+    },
+    "UT": {
+      "homeless_veterans": 330,
+      "homeless_veterans_sheltered": 297,
+      "homeless_veterans_unsheltered": 33,
+      "state_population": 2856343,
+      "homeless_per_100k": 11.55,
+      "sheltered_per_100k": 10.4,
+      "unsheltered_per_100k": 1.16
+    },
+    "VT": {
+      "homeless_veterans": 109,
+      "homeless_veterans_sheltered": 93,
+      "homeless_veterans_unsheltered": 16,
+      "state_population": 626398,
+      "homeless_per_100k": 17.4,
+      "sheltered_per_100k": 14.85,
+      "unsheltered_per_100k": 2.55
+    },
+    "VA": {
+      "homeless_veterans": 881,
+      "homeless_veterans_sheltered": 727,
+      "homeless_veterans_unsheltered": 154,
+      "state_population": 8193374,
+      "homeless_per_100k": 10.75,
+      "sheltered_per_100k": 8.87,
+      "unsheltered_per_100k": 1.88
+    },
+    "WA": {
+      "homeless_veterans": 1475,
+      "homeless_veterans_sheltered": 1097,
+      "homeless_veterans_unsheltered": 378,
+      "state_population": 6897292,
+      "homeless_per_100k": 21.39,
+      "sheltered_per_100k": 15.9,
+      "unsheltered_per_100k": 5.48
+    },
+    "WV": {
+      "homeless_veterans": 268,
+      "homeless_veterans_sheltered": 219,
+      "homeless_veterans_unsheltered": 49,
+      "state_population": 1856283,
+      "homeless_per_100k": 14.44,
+      "sheltered_per_100k": 11.8,
+      "unsheltered_per_100k": 2.64
+    },
+    "WI": {
+      "homeless_veterans": 539,
+      "homeless_veterans_sheltered": 525,
+      "homeless_veterans_unsheltered": 14,
+      "state_population": 5726422,
+      "homeless_per_100k": 9.41,
+      "sheltered_per_100k": 9.17,
+      "unsheltered_per_100k": 0.24
+    },
+    "WY": {
+      "homeless_veterans": 311,
+      "homeless_veterans_sheltered": 128,
+      "homeless_veterans_unsheltered": 183,
+      "state_population": 577080,
+      "homeless_per_100k": 53.89,
+      "sheltered_per_100k": 22.18,
+      "unsheltered_per_100k": 31.71
+    }
+  },
+  "2013": {
+    "AL": {
+      "homeless_veterans": 511,
+      "homeless_veterans_sheltered": 363,
+      "homeless_veterans_unsheltered": 148,
+      "state_population": 4830533,
+      "homeless_per_100k": 10.58,
+      "sheltered_per_100k": 7.51,
+      "unsheltered_per_100k": 3.06
+    },
+    "AK": {
+      "homeless_veterans": 210,
+      "homeless_veterans_sheltered": 188,
+      "homeless_veterans_unsheltered": 22,
+      "state_population": 737442,
+      "homeless_per_100k": 28.48,
+      "sheltered_per_100k": 25.49,
+      "unsheltered_per_100k": 2.98
+    },
+    "AZ": {
+      "homeless_veterans": 1222,
+      "homeless_veterans_sheltered": 901,
+      "homeless_veterans_unsheltered": 321,
+      "state_population": 6630799,
+      "homeless_per_100k": 18.43,
+      "sheltered_per_100k": 13.59,
+      "unsheltered_per_100k": 4.84
+    },
+    "AR": {
+      "homeless_veterans": 462,
+      "homeless_veterans_sheltered": 326,
+      "homeless_veterans_unsheltered": 136,
+      "state_population": 2957957,
+      "homeless_per_100k": 15.62,
+      "sheltered_per_100k": 11.02,
+      "unsheltered_per_100k": 4.6
+    },
+    "CA": {
+      "homeless_veterans": 12895,
+      "homeless_veterans_sheltered": 4886,
+      "homeless_veterans_unsheltered": 8009,
+      "state_population": 38414128,
+      "homeless_per_100k": 33.57,
+      "sheltered_per_100k": 12.72,
+      "unsheltered_per_100k": 20.85
+    },
+    "CO": {
+      "homeless_veterans": 685,
+      "homeless_veterans_sheltered": 452,
+      "homeless_veterans_unsheltered": 233,
+      "state_population": 5271132,
+      "homeless_per_100k": 13,
+      "sheltered_per_100k": 8.58,
+      "unsheltered_per_100k": 4.42
+    },
+    "CT": {
+      "homeless_veterans": 341,
+      "homeless_veterans_sheltered": 267,
+      "homeless_veterans_unsheltered": 74,
+      "state_population": 3597168,
+      "homeless_per_100k": 9.48,
+      "sheltered_per_100k": 7.42,
+      "unsheltered_per_100k": 2.06
+    },
+    "DE": {
+      "homeless_veterans": 89,
+      "homeless_veterans_sheltered": 86,
+      "homeless_veterans_unsheltered": 3,
+      "state_population": 925353,
+      "homeless_per_100k": 9.62,
+      "sheltered_per_100k": 9.29,
+      "unsheltered_per_100k": 0.32
+    },
+    "DC": {
+      "homeless_veterans": 499,
+      "homeless_veterans_sheltered": 435,
+      "homeless_veterans_unsheltered": 64,
+      "state_population": 649540,
+      "homeless_per_100k": 76.82,
+      "sheltered_per_100k": 66.97,
+      "unsheltered_per_100k": 9.85
+    },
+    "FL": {
+      "homeless_veterans": 5505,
+      "homeless_veterans_sheltered": 2328,
+      "homeless_veterans_unsheltered": 3177,
+      "state_population": 19594467,
+      "homeless_per_100k": 28.09,
+      "sheltered_per_100k": 11.88,
+      "unsheltered_per_100k": 16.21
+    },
+    "GA": {
+      "homeless_veterans": 1805,
+      "homeless_veterans_sheltered": 900,
+      "homeless_veterans_unsheltered": 905,
+      "state_population": 9991562,
+      "homeless_per_100k": 18.07,
+      "sheltered_per_100k": 9.01,
+      "unsheltered_per_100k": 9.06
+    },
+    "HI": {
+      "homeless_veterans": 558,
+      "homeless_veterans_sheltered": 234,
+      "homeless_veterans_unsheltered": 324,
+      "state_population": 1408765,
+      "homeless_per_100k": 39.61,
+      "sheltered_per_100k": 16.61,
+      "unsheltered_per_100k": 23
+    },
+    "ID": {
+      "homeless_veterans": 208,
+      "homeless_veterans_sheltered": 162,
+      "homeless_veterans_unsheltered": 46,
+      "state_population": 1612785,
+      "homeless_per_100k": 12.9,
+      "sheltered_per_100k": 10.04,
+      "unsheltered_per_100k": 2.85
+    },
+    "IL": {
+      "homeless_veterans": 1267,
+      "homeless_veterans_sheltered": 882,
+      "homeless_veterans_unsheltered": 385,
+      "state_population": 12889580,
+      "homeless_per_100k": 9.83,
+      "sheltered_per_100k": 6.84,
+      "unsheltered_per_100k": 2.99
+    },
+    "IN": {
+      "homeless_veterans": 743,
+      "homeless_veterans_sheltered": 666,
+      "homeless_veterans_unsheltered": 77,
+      "state_population": 6570518,
+      "homeless_per_100k": 11.31,
+      "sheltered_per_100k": 10.14,
+      "unsheltered_per_100k": 1.17
+    },
+    "IA": {
+      "homeless_veterans": 229,
+      "homeless_veterans_sheltered": 220,
+      "homeless_veterans_unsheltered": 9,
+      "state_population": 3092224,
+      "homeless_per_100k": 7.41,
+      "sheltered_per_100k": 7.11,
+      "unsheltered_per_100k": 0.29
+    },
+    "KS": {
+      "homeless_veterans": 414,
+      "homeless_veterans_sheltered": 384,
+      "homeless_veterans_unsheltered": 30,
+      "state_population": 2894630,
+      "homeless_per_100k": 14.3,
+      "sheltered_per_100k": 13.27,
+      "unsheltered_per_100k": 1.04
+    },
+    "KY": {
+      "homeless_veterans": 607,
+      "homeless_veterans_sheltered": 510,
+      "homeless_veterans_unsheltered": 97,
+      "state_population": 4398500,
+      "homeless_per_100k": 13.8,
+      "sheltered_per_100k": 11.59,
+      "unsheltered_per_100k": 2.21
+    },
+    "LA": {
+      "homeless_veterans": 575,
+      "homeless_veterans_sheltered": 383,
+      "homeless_veterans_unsheltered": 192,
+      "state_population": 4627491,
+      "homeless_per_100k": 12.43,
+      "sheltered_per_100k": 8.28,
+      "unsheltered_per_100k": 4.15
+    },
+    "ME": {
+      "homeless_veterans": 164,
+      "homeless_veterans_sheltered": 150,
+      "homeless_veterans_unsheltered": 14,
+      "state_population": 1328778,
+      "homeless_per_100k": 12.34,
+      "sheltered_per_100k": 11.29,
+      "unsheltered_per_100k": 1.05
+    },
+    "MD": {
+      "homeless_veterans": 673,
+      "homeless_veterans_sheltered": 563,
+      "homeless_veterans_unsheltered": 110,
+      "state_population": 5936040,
+      "homeless_per_100k": 11.34,
+      "sheltered_per_100k": 9.48,
+      "unsheltered_per_100k": 1.85
+    },
+    "MA": {
+      "homeless_veterans": 1253,
+      "homeless_veterans_sheltered": 1204,
+      "homeless_veterans_unsheltered": 49,
+      "state_population": 6708810,
+      "homeless_per_100k": 18.68,
+      "sheltered_per_100k": 17.95,
+      "unsheltered_per_100k": 0.73
+    },
+    "MI": {
+      "homeless_veterans": 1100,
+      "homeless_veterans_sheltered": 945,
+      "homeless_veterans_unsheltered": 155,
+      "state_population": 9900506,
+      "homeless_per_100k": 11.11,
+      "sheltered_per_100k": 9.54,
+      "unsheltered_per_100k": 1.57
+    },
+    "MN": {
+      "homeless_veterans": 349,
+      "homeless_veterans_sheltered": 286,
+      "homeless_veterans_unsheltered": 63,
+      "state_population": 5420541,
+      "homeless_per_100k": 6.44,
+      "sheltered_per_100k": 5.28,
+      "unsheltered_per_100k": 1.16
+    },
+    "MS": {
+      "homeless_veterans": 210,
+      "homeless_veterans_sheltered": 129,
+      "homeless_veterans_unsheltered": 81,
+      "state_population": 2990976,
+      "homeless_per_100k": 7.02,
+      "sheltered_per_100k": 4.31,
+      "unsheltered_per_100k": 2.71
+    },
+    "MO": {
+      "homeless_veterans": 843,
+      "homeless_veterans_sheltered": 667,
+      "homeless_veterans_unsheltered": 176,
+      "state_population": 6043708,
+      "homeless_per_100k": 13.95,
+      "sheltered_per_100k": 11.04,
+      "unsheltered_per_100k": 2.91
+    },
+    "MT": {
+      "homeless_veterans": 309,
+      "homeless_veterans_sheltered": 118,
+      "homeless_veterans_unsheltered": 191,
+      "state_population": 1014402,
+      "homeless_per_100k": 30.46,
+      "sheltered_per_100k": 11.63,
+      "unsheltered_per_100k": 18.83
+    },
+    "NE": {
+      "homeless_veterans": 183,
+      "homeless_veterans_sheltered": 161,
+      "homeless_veterans_unsheltered": 22,
+      "state_population": 1869300,
+      "homeless_per_100k": 9.79,
+      "sheltered_per_100k": 8.61,
+      "unsheltered_per_100k": 1.18
+    },
+    "NV": {
+      "homeless_veterans": 790,
+      "homeless_veterans_sheltered": 477,
+      "homeless_veterans_unsheltered": 313,
+      "state_population": 2790366,
+      "homeless_per_100k": 28.31,
+      "sheltered_per_100k": 17.09,
+      "unsheltered_per_100k": 11.22
+    },
+    "NH": {
+      "homeless_veterans": 125,
+      "homeless_veterans_sheltered": 112,
+      "homeless_veterans_unsheltered": 13,
+      "state_population": 1322660,
+      "homeless_per_100k": 9.45,
+      "sheltered_per_100k": 8.47,
+      "unsheltered_per_100k": 0.98
+    },
+    "NJ": {
+      "homeless_veterans": 540,
+      "homeless_veterans_sheltered": 420,
+      "homeless_veterans_unsheltered": 120,
+      "state_population": 8907384,
+      "homeless_per_100k": 6.06,
+      "sheltered_per_100k": 4.72,
+      "unsheltered_per_100k": 1.35
+    },
+    "NM": {
+      "homeless_veterans": 243,
+      "homeless_veterans_sheltered": 183,
+      "homeless_veterans_unsheltered": 60,
+      "state_population": 2086890,
+      "homeless_per_100k": 11.64,
+      "sheltered_per_100k": 8.77,
+      "unsheltered_per_100k": 2.88
+    },
+    "NY": {
+      "homeless_veterans": 4659,
+      "homeless_veterans_sheltered": 4201,
+      "homeless_veterans_unsheltered": 458,
+      "state_population": 19691032,
+      "homeless_per_100k": 23.66,
+      "sheltered_per_100k": 21.33,
+      "unsheltered_per_100k": 2.33
+    },
+    "NC": {
+      "homeless_veterans": 1123,
+      "homeless_veterans_sheltered": 934,
+      "homeless_veterans_unsheltered": 189,
+      "state_population": 9845432,
+      "homeless_per_100k": 11.41,
+      "sheltered_per_100k": 9.49,
+      "unsheltered_per_100k": 1.92
+    },
+    "ND": {
+      "homeless_veterans": 241,
+      "homeless_veterans_sheltered": 60,
+      "homeless_veterans_unsheltered": 181,
+      "state_population": 723626,
+      "homeless_per_100k": 33.3,
+      "sheltered_per_100k": 8.29,
+      "unsheltered_per_100k": 25.01
+    },
+    "OH": {
+      "homeless_veterans": 1212,
+      "homeless_veterans_sheltered": 1050,
+      "homeless_veterans_unsheltered": 162,
+      "state_population": 11572232,
+      "homeless_per_100k": 10.47,
+      "sheltered_per_100k": 9.07,
+      "unsheltered_per_100k": 1.4
+    },
+    "OK": {
+      "homeless_veterans": 437,
+      "homeless_veterans_sheltered": 338,
+      "homeless_veterans_unsheltered": 99,
+      "state_population": 3853405,
+      "homeless_per_100k": 11.34,
+      "sheltered_per_100k": 8.77,
+      "unsheltered_per_100k": 2.57
+    },
+    "OR": {
+      "homeless_veterans": 1494,
+      "homeless_veterans_sheltered": 709,
+      "homeless_veterans_unsheltered": 785,
+      "state_population": 3928030,
+      "homeless_per_100k": 38.03,
+      "sheltered_per_100k": 18.05,
+      "unsheltered_per_100k": 19.98
+    },
+    "PA": {
+      "homeless_veterans": 1462,
+      "homeless_veterans_sheltered": 1290,
+      "homeless_veterans_unsheltered": 172,
+      "state_population": 12783536,
+      "homeless_per_100k": 11.44,
+      "sheltered_per_100k": 10.09,
+      "unsheltered_per_100k": 1.35
+    },
+    "RI": {
+      "homeless_veterans": 97,
+      "homeless_veterans_sheltered": 95,
+      "homeless_veterans_unsheltered": 2,
+      "state_population": 1052856,
+      "homeless_per_100k": 9.21,
+      "sheltered_per_100k": 9.02,
+      "unsheltered_per_100k": 0.19
+    },
+    "SC": {
+      "homeless_veterans": 636,
+      "homeless_veterans_sheltered": 345,
+      "homeless_veterans_unsheltered": 291,
+      "state_population": 4768498,
+      "homeless_per_100k": 13.34,
+      "sheltered_per_100k": 7.23,
+      "unsheltered_per_100k": 6.1
+    },
+    "SD": {
+      "homeless_veterans": 125,
+      "homeless_veterans_sheltered": 106,
+      "homeless_veterans_unsheltered": 19,
+      "state_population": 845270,
+      "homeless_per_100k": 14.79,
+      "sheltered_per_100k": 12.54,
+      "unsheltered_per_100k": 2.25
+    },
+    "TN": {
+      "homeless_veterans": 991,
+      "homeless_veterans_sheltered": 728,
+      "homeless_veterans_unsheltered": 263,
+      "state_population": 6496130,
+      "homeless_per_100k": 15.26,
+      "sheltered_per_100k": 11.21,
+      "unsheltered_per_100k": 4.05
+    },
+    "TX": {
+      "homeless_veterans": 3878,
+      "homeless_veterans_sheltered": 2007,
+      "homeless_veterans_unsheltered": 1871,
+      "state_population": 26500674,
+      "homeless_per_100k": 14.63,
+      "sheltered_per_100k": 7.57,
+      "unsheltered_per_100k": 7.06
+    },
+    "UT": {
+      "homeless_veterans": 327,
+      "homeless_veterans_sheltered": 290,
+      "homeless_veterans_unsheltered": 37,
+      "state_population": 2903685,
+      "homeless_per_100k": 11.26,
+      "sheltered_per_100k": 9.99,
+      "unsheltered_per_100k": 1.27
+    },
+    "VT": {
+      "homeless_veterans": 128,
+      "homeless_veterans_sheltered": 111,
+      "homeless_veterans_unsheltered": 17,
+      "state_population": 627129,
+      "homeless_per_100k": 20.41,
+      "sheltered_per_100k": 17.7,
+      "unsheltered_per_100k": 2.71
+    },
+    "VA": {
+      "homeless_veterans": 719,
+      "homeless_veterans_sheltered": 625,
+      "homeless_veterans_unsheltered": 94,
+      "state_population": 8267875,
+      "homeless_per_100k": 8.7,
+      "sheltered_per_100k": 7.56,
+      "unsheltered_per_100k": 1.14
+    },
+    "WA": {
+      "homeless_veterans": 1318,
+      "homeless_veterans_sheltered": 1058,
+      "homeless_veterans_unsheltered": 260,
+      "state_population": 6973281,
+      "homeless_per_100k": 18.9,
+      "sheltered_per_100k": 15.17,
+      "unsheltered_per_100k": 3.73
+    },
+    "WV": {
+      "homeless_veterans": 329,
+      "homeless_veterans_sheltered": 292,
+      "homeless_veterans_unsheltered": 37,
+      "state_population": 1852985,
+      "homeless_per_100k": 17.76,
+      "sheltered_per_100k": 15.76,
+      "unsheltered_per_100k": 2
+    },
+    "WI": {
+      "homeless_veterans": 552,
+      "homeless_veterans_sheltered": 528,
+      "homeless_veterans_unsheltered": 24,
+      "state_population": 5743653,
+      "homeless_per_100k": 9.61,
+      "sheltered_per_100k": 9.19,
+      "unsheltered_per_100k": 0.42
+    },
+    "WY": {
+      "homeless_veterans": 137,
+      "homeless_veterans_sheltered": 110,
+      "homeless_veterans_unsheltered": 27,
+      "state_population": 583131,
+      "homeless_per_100k": 23.49,
+      "sheltered_per_100k": 18.86,
+      "unsheltered_per_100k": 4.63
+    }
+  },
+  "2014": {
+    "AL": {
+      "homeless_veterans": 542,
+      "homeless_veterans_sheltered": 450,
+      "homeless_veterans_unsheltered": 92,
+      "state_population": 4846411,
+      "homeless_per_100k": 11.18,
+      "sheltered_per_100k": 9.29,
+      "unsheltered_per_100k": 1.9
+    },
+    "AK": {
+      "homeless_veterans": 178,
+      "homeless_veterans_sheltered": 160,
+      "homeless_veterans_unsheltered": 18,
+      "state_population": 737046,
+      "homeless_per_100k": 24.15,
+      "sheltered_per_100k": 21.71,
+      "unsheltered_per_100k": 2.44
+    },
+    "AZ": {
+      "homeless_veterans": 858,
+      "homeless_veterans_sheltered": 635,
+      "homeless_veterans_unsheltered": 223,
+      "state_population": 6728783,
+      "homeless_per_100k": 12.75,
+      "sheltered_per_100k": 9.44,
+      "unsheltered_per_100k": 3.31
+    },
+    "AR": {
+      "homeless_veterans": 361,
+      "homeless_veterans_sheltered": 220,
+      "homeless_veterans_unsheltered": 141,
+      "state_population": 2966835,
+      "homeless_per_100k": 12.17,
+      "sheltered_per_100k": 7.42,
+      "unsheltered_per_100k": 4.75
+    },
+    "CA": {
+      "homeless_veterans": 12096,
+      "homeless_veterans_sheltered": 4457,
+      "homeless_veterans_unsheltered": 7639,
+      "state_population": 38792291,
+      "homeless_per_100k": 31.18,
+      "sheltered_per_100k": 11.49,
+      "unsheltered_per_100k": 19.69
+    },
+    "CO": {
+      "homeless_veterans": 753,
+      "homeless_veterans_sheltered": 528,
+      "homeless_veterans_unsheltered": 225,
+      "state_population": 5355588,
+      "homeless_per_100k": 14.06,
+      "sheltered_per_100k": 9.86,
+      "unsheltered_per_100k": 4.2
+    },
+    "CT": {
+      "homeless_veterans": 295,
+      "homeless_veterans_sheltered": 221,
+      "homeless_veterans_unsheltered": 74,
+      "state_population": 3594762,
+      "homeless_per_100k": 8.21,
+      "sheltered_per_100k": 6.15,
+      "unsheltered_per_100k": 2.06
+    },
+    "DE": {
+      "homeless_veterans": 93,
+      "homeless_veterans_sheltered": 89,
+      "homeless_veterans_unsheltered": 4,
+      "state_population": 935968,
+      "homeless_per_100k": 9.94,
+      "sheltered_per_100k": 9.51,
+      "unsheltered_per_100k": 0.43
+    },
+    "DC": {
+      "homeless_veterans": 406,
+      "homeless_veterans_sheltered": 375,
+      "homeless_veterans_unsheltered": 31,
+      "state_population": 659836,
+      "homeless_per_100k": 61.53,
+      "sheltered_per_100k": 56.83,
+      "unsheltered_per_100k": 4.7
+    },
+    "FL": {
+      "homeless_veterans": 4552,
+      "homeless_veterans_sheltered": 2424,
+      "homeless_veterans_unsheltered": 2128,
+      "state_population": 19905569,
+      "homeless_per_100k": 22.87,
+      "sheltered_per_100k": 12.18,
+      "unsheltered_per_100k": 10.69
+    },
+    "GA": {
+      "homeless_veterans": 1443,
+      "homeless_veterans_sheltered": 647,
+      "homeless_veterans_unsheltered": 796,
+      "state_population": 10097132,
+      "homeless_per_100k": 14.29,
+      "sheltered_per_100k": 6.41,
+      "unsheltered_per_100k": 7.88
+    },
+    "HI": {
+      "homeless_veterans": 593,
+      "homeless_veterans_sheltered": 247,
+      "homeless_veterans_unsheltered": 346,
+      "state_population": 1420257,
+      "homeless_per_100k": 41.75,
+      "sheltered_per_100k": 17.39,
+      "unsheltered_per_100k": 24.36
+    },
+    "ID": {
+      "homeless_veterans": 215,
+      "homeless_veterans_sheltered": 135,
+      "homeless_veterans_unsheltered": 80,
+      "state_population": 1634806,
+      "homeless_per_100k": 13.15,
+      "sheltered_per_100k": 8.26,
+      "unsheltered_per_100k": 4.89
+    },
+    "IL": {
+      "homeless_veterans": 1234,
+      "homeless_veterans_sheltered": 913,
+      "homeless_veterans_unsheltered": 321,
+      "state_population": 12882189,
+      "homeless_per_100k": 9.58,
+      "sheltered_per_100k": 7.09,
+      "unsheltered_per_100k": 2.49
+    },
+    "IN": {
+      "homeless_veterans": 725,
+      "homeless_veterans_sheltered": 687,
+      "homeless_veterans_unsheltered": 38,
+      "state_population": 6597880,
+      "homeless_per_100k": 10.99,
+      "sheltered_per_100k": 10.41,
+      "unsheltered_per_100k": 0.58
+    },
+    "IA": {
+      "homeless_veterans": 202,
+      "homeless_veterans_sheltered": 177,
+      "homeless_veterans_unsheltered": 25,
+      "state_population": 3109481,
+      "homeless_per_100k": 6.5,
+      "sheltered_per_100k": 5.69,
+      "unsheltered_per_100k": 0.8
+    },
+    "KS": {
+      "homeless_veterans": 393,
+      "homeless_veterans_sheltered": 356,
+      "homeless_veterans_unsheltered": 37,
+      "state_population": 2902507,
+      "homeless_per_100k": 13.54,
+      "sheltered_per_100k": 12.27,
+      "unsheltered_per_100k": 1.27
+    },
+    "KY": {
+      "homeless_veterans": 600,
+      "homeless_veterans_sheltered": 558,
+      "homeless_veterans_unsheltered": 42,
+      "state_population": 4412617,
+      "homeless_per_100k": 13.6,
+      "sheltered_per_100k": 12.65,
+      "unsheltered_per_100k": 0.95
+    },
+    "LA": {
+      "homeless_veterans": 437,
+      "homeless_veterans_sheltered": 332,
+      "homeless_veterans_unsheltered": 105,
+      "state_population": 4648990,
+      "homeless_per_100k": 9.4,
+      "sheltered_per_100k": 7.14,
+      "unsheltered_per_100k": 2.26
+    },
+    "ME": {
+      "homeless_veterans": 152,
+      "homeless_veterans_sheltered": 138,
+      "homeless_veterans_unsheltered": 14,
+      "state_population": 1330256,
+      "homeless_per_100k": 11.43,
+      "sheltered_per_100k": 10.37,
+      "unsheltered_per_100k": 1.05
+    },
+    "MD": {
+      "homeless_veterans": 654,
+      "homeless_veterans_sheltered": 555,
+      "homeless_veterans_unsheltered": 99,
+      "state_population": 5975346,
+      "homeless_per_100k": 10.94,
+      "sheltered_per_100k": 9.29,
+      "unsheltered_per_100k": 1.66
+    },
+    "MA": {
+      "homeless_veterans": 1264,
+      "homeless_veterans_sheltered": 1234,
+      "homeless_veterans_unsheltered": 30,
+      "state_population": 6755124,
+      "homeless_per_100k": 18.71,
+      "sheltered_per_100k": 18.27,
+      "unsheltered_per_100k": 0.44
+    },
+    "MI": {
+      "homeless_veterans": 1122,
+      "homeless_veterans_sheltered": 994,
+      "homeless_veterans_unsheltered": 128,
+      "state_population": 9916306,
+      "homeless_per_100k": 11.31,
+      "sheltered_per_100k": 10.02,
+      "unsheltered_per_100k": 1.29
+    },
+    "MN": {
+      "homeless_veterans": 317,
+      "homeless_veterans_sheltered": 263,
+      "homeless_veterans_unsheltered": 54,
+      "state_population": 5457125,
+      "homeless_per_100k": 5.81,
+      "sheltered_per_100k": 4.82,
+      "unsheltered_per_100k": 0.99
+    },
+    "MS": {
+      "homeless_veterans": 279,
+      "homeless_veterans_sheltered": 221,
+      "homeless_veterans_unsheltered": 58,
+      "state_population": 2993443,
+      "homeless_per_100k": 9.32,
+      "sheltered_per_100k": 7.38,
+      "unsheltered_per_100k": 1.94
+    },
+    "MO": {
+      "homeless_veterans": 652,
+      "homeless_veterans_sheltered": 563,
+      "homeless_veterans_unsheltered": 89,
+      "state_population": 6063827,
+      "homeless_per_100k": 10.75,
+      "sheltered_per_100k": 9.28,
+      "unsheltered_per_100k": 1.47
+    },
+    "MT": {
+      "homeless_veterans": 256,
+      "homeless_veterans_sheltered": 94,
+      "homeless_veterans_unsheltered": 162,
+      "state_population": 1023252,
+      "homeless_per_100k": 25.02,
+      "sheltered_per_100k": 9.19,
+      "unsheltered_per_100k": 15.83
+    },
+    "NE": {
+      "homeless_veterans": 241,
+      "homeless_veterans_sheltered": 224,
+      "homeless_veterans_unsheltered": 17,
+      "state_population": 1882980,
+      "homeless_per_100k": 12.8,
+      "sheltered_per_100k": 11.9,
+      "unsheltered_per_100k": 0.9
+    },
+    "NV": {
+      "homeless_veterans": 1036,
+      "homeless_veterans_sheltered": 546,
+      "homeless_veterans_unsheltered": 490,
+      "state_population": 2838281,
+      "homeless_per_100k": 36.5,
+      "sheltered_per_100k": 19.24,
+      "unsheltered_per_100k": 17.26
+    },
+    "NH": {
+      "homeless_veterans": 171,
+      "homeless_veterans_sheltered": 162,
+      "homeless_veterans_unsheltered": 9,
+      "state_population": 1327996,
+      "homeless_per_100k": 12.88,
+      "sheltered_per_100k": 12.2,
+      "unsheltered_per_100k": 0.68
+    },
+    "NJ": {
+      "homeless_veterans": 630,
+      "homeless_veterans_sheltered": 554,
+      "homeless_veterans_unsheltered": 76,
+      "state_population": 8938844,
+      "homeless_per_100k": 7.05,
+      "sheltered_per_100k": 6.2,
+      "unsheltered_per_100k": 0.85
+    },
+    "NM": {
+      "homeless_veterans": 318,
+      "homeless_veterans_sheltered": 258,
+      "homeless_veterans_unsheltered": 60,
+      "state_population": 2085567,
+      "homeless_per_100k": 15.25,
+      "sheltered_per_100k": 12.37,
+      "unsheltered_per_100k": 2.88
+    },
+    "NY": {
+      "homeless_veterans": 2542,
+      "homeless_veterans_sheltered": 2085,
+      "homeless_veterans_unsheltered": 457,
+      "state_population": 19748858,
+      "homeless_per_100k": 12.87,
+      "sheltered_per_100k": 10.56,
+      "unsheltered_per_100k": 2.31
+    },
+    "NC": {
+      "homeless_veterans": 1164,
+      "homeless_veterans_sheltered": 982,
+      "homeless_veterans_unsheltered": 182,
+      "state_population": 9940387,
+      "homeless_per_100k": 11.71,
+      "sheltered_per_100k": 9.88,
+      "unsheltered_per_100k": 1.83
+    },
+    "ND": {
+      "homeless_veterans": 151,
+      "homeless_veterans_sheltered": 117,
+      "homeless_veterans_unsheltered": 34,
+      "state_population": 740040,
+      "homeless_per_100k": 20.4,
+      "sheltered_per_100k": 15.81,
+      "unsheltered_per_100k": 4.59
+    },
+    "OH": {
+      "homeless_veterans": 1236,
+      "homeless_veterans_sheltered": 1102,
+      "homeless_veterans_unsheltered": 134,
+      "state_population": 11596998,
+      "homeless_per_100k": 10.66,
+      "sheltered_per_100k": 9.5,
+      "unsheltered_per_100k": 1.16
+    },
+    "OK": {
+      "homeless_veterans": 408,
+      "homeless_veterans_sheltered": 273,
+      "homeless_veterans_unsheltered": 135,
+      "state_population": 3879610,
+      "homeless_per_100k": 10.52,
+      "sheltered_per_100k": 7.04,
+      "unsheltered_per_100k": 3.48
+    },
+    "OR": {
+      "homeless_veterans": 1292,
+      "homeless_veterans_sheltered": 702,
+      "homeless_veterans_unsheltered": 590,
+      "state_population": 3971202,
+      "homeless_per_100k": 32.53,
+      "sheltered_per_100k": 17.68,
+      "unsheltered_per_100k": 14.86
+    },
+    "PA": {
+      "homeless_veterans": 1411,
+      "homeless_veterans_sheltered": 1336,
+      "homeless_veterans_unsheltered": 75,
+      "state_population": 12793767,
+      "homeless_per_100k": 11.03,
+      "sheltered_per_100k": 10.44,
+      "unsheltered_per_100k": 0.59
+    },
+    "RI": {
+      "homeless_veterans": 108,
+      "homeless_veterans_sheltered": 108,
+      "homeless_veterans_unsheltered": 0,
+      "state_population": 1054907,
+      "homeless_per_100k": 10.24,
+      "sheltered_per_100k": 10.24,
+      "unsheltered_per_100k": 0
+    },
+    "SC": {
+      "homeless_veterans": 703,
+      "homeless_veterans_sheltered": 399,
+      "homeless_veterans_unsheltered": 304,
+      "state_population": 4829160,
+      "homeless_per_100k": 14.56,
+      "sheltered_per_100k": 8.26,
+      "unsheltered_per_100k": 6.3
+    },
+    "SD": {
+      "homeless_veterans": 132,
+      "homeless_veterans_sheltered": 128,
+      "homeless_veterans_unsheltered": 4,
+      "state_population": 853304,
+      "homeless_per_100k": 15.47,
+      "sheltered_per_100k": 15,
+      "unsheltered_per_100k": 0.47
+    },
+    "TN": {
+      "homeless_veterans": 1142,
+      "homeless_veterans_sheltered": 920,
+      "homeless_veterans_unsheltered": 222,
+      "state_population": 6547779,
+      "homeless_per_100k": 17.44,
+      "sheltered_per_100k": 14.05,
+      "unsheltered_per_100k": 3.39
+    },
+    "TX": {
+      "homeless_veterans": 2718,
+      "homeless_veterans_sheltered": 1576,
+      "homeless_veterans_unsheltered": 1142,
+      "state_population": 26979078,
+      "homeless_per_100k": 10.07,
+      "sheltered_per_100k": 5.84,
+      "unsheltered_per_100k": 4.23
+    },
+    "UT": {
+      "homeless_veterans": 317,
+      "homeless_veterans_sheltered": 293,
+      "homeless_veterans_unsheltered": 24,
+      "state_population": 2944498,
+      "homeless_per_100k": 10.77,
+      "sheltered_per_100k": 9.95,
+      "unsheltered_per_100k": 0.82
+    },
+    "VT": {
+      "homeless_veterans": 120,
+      "homeless_veterans_sheltered": 111,
+      "homeless_veterans_unsheltered": 9,
+      "state_population": 626767,
+      "homeless_per_100k": 19.15,
+      "sheltered_per_100k": 17.71,
+      "unsheltered_per_100k": 1.44
+    },
+    "VA": {
+      "homeless_veterans": 620,
+      "homeless_veterans_sheltered": 535,
+      "homeless_veterans_unsheltered": 85,
+      "state_population": 8328098,
+      "homeless_per_100k": 7.44,
+      "sheltered_per_100k": 6.42,
+      "unsheltered_per_100k": 1.02
+    },
+    "WA": {
+      "homeless_veterans": 1433,
+      "homeless_veterans_sheltered": 1089,
+      "homeless_veterans_unsheltered": 344,
+      "state_population": 7063166,
+      "homeless_per_100k": 20.29,
+      "sheltered_per_100k": 15.42,
+      "unsheltered_per_100k": 4.87
+    },
+    "WV": {
+      "homeless_veterans": 333,
+      "homeless_veterans_sheltered": 303,
+      "homeless_veterans_unsheltered": 30,
+      "state_population": 1848751,
+      "homeless_per_100k": 18.01,
+      "sheltered_per_100k": 16.39,
+      "unsheltered_per_100k": 1.62
+    },
+    "WI": {
+      "homeless_veterans": 520,
+      "homeless_veterans_sheltered": 496,
+      "homeless_veterans_unsheltered": 24,
+      "state_population": 5759432,
+      "homeless_per_100k": 9.03,
+      "sheltered_per_100k": 8.61,
+      "unsheltered_per_100k": 0.42
+    },
+    "WY": {
+      "homeless_veterans": 116,
+      "homeless_veterans_sheltered": 95,
+      "homeless_veterans_unsheltered": 21,
+      "state_population": 584304,
+      "homeless_per_100k": 19.85,
+      "sheltered_per_100k": 16.26,
+      "unsheltered_per_100k": 3.59
+    }
+  },
+  "2015": {
+    "AL": {
+      "homeless_veterans": 474,
+      "homeless_veterans_sheltered": 399,
+      "homeless_veterans_unsheltered": 75,
+      "state_population": 4858979,
+      "homeless_per_100k": 9.76,
+      "sheltered_per_100k": 8.21,
+      "unsheltered_per_100k": 1.54
+    },
+    "AK": {
+      "homeless_veterans": 180,
+      "homeless_veterans_sheltered": 149,
+      "homeless_veterans_unsheltered": 31,
+      "state_population": 738432,
+      "homeless_per_100k": 24.38,
+      "sheltered_per_100k": 20.18,
+      "unsheltered_per_100k": 4.2
+    },
+    "AZ": {
+      "homeless_veterans": 1220,
+      "homeless_veterans_sheltered": 672,
+      "homeless_veterans_unsheltered": 548,
+      "state_population": 6828065,
+      "homeless_per_100k": 17.87,
+      "sheltered_per_100k": 9.84,
+      "unsheltered_per_100k": 8.03
+    },
+    "AR": {
+      "homeless_veterans": 456,
+      "homeless_veterans_sheltered": 385,
+      "homeless_veterans_unsheltered": 71,
+      "state_population": 2978204,
+      "homeless_per_100k": 15.31,
+      "sheltered_per_100k": 12.93,
+      "unsheltered_per_100k": 2.38
+    },
+    "CA": {
+      "homeless_veterans": 11311,
+      "homeless_veterans_sheltered": 4309,
+      "homeless_veterans_unsheltered": 7002,
+      "state_population": 39144818,
+      "homeless_per_100k": 28.9,
+      "sheltered_per_100k": 11.01,
+      "unsheltered_per_100k": 17.89
+    },
+    "CO": {
+      "homeless_veterans": 950,
+      "homeless_veterans_sheltered": 644,
+      "homeless_veterans_unsheltered": 306,
+      "state_population": 5456574,
+      "homeless_per_100k": 17.41,
+      "sheltered_per_100k": 11.8,
+      "unsheltered_per_100k": 5.61
+    },
+    "CT": {
+      "homeless_veterans": 282,
+      "homeless_veterans_sheltered": 241,
+      "homeless_veterans_unsheltered": 41,
+      "state_population": 3590886,
+      "homeless_per_100k": 7.85,
+      "sheltered_per_100k": 6.71,
+      "unsheltered_per_100k": 1.14
+    },
+    "DE": {
+      "homeless_veterans": 79,
+      "homeless_veterans_sheltered": 74,
+      "homeless_veterans_unsheltered": 5,
+      "state_population": 945934,
+      "homeless_per_100k": 8.35,
+      "sheltered_per_100k": 7.82,
+      "unsheltered_per_100k": 0.53
+    },
+    "DC": {
+      "homeless_veterans": 408,
+      "homeless_veterans_sheltered": 366,
+      "homeless_veterans_unsheltered": 42,
+      "state_population": 672228,
+      "homeless_per_100k": 60.69,
+      "sheltered_per_100k": 54.45,
+      "unsheltered_per_100k": 6.25
+    },
+    "FL": {
+      "homeless_veterans": 3926,
+      "homeless_veterans_sheltered": 2372,
+      "homeless_veterans_unsheltered": 1554,
+      "state_population": 20271272,
+      "homeless_per_100k": 19.37,
+      "sheltered_per_100k": 11.7,
+      "unsheltered_per_100k": 7.67
+    },
+    "GA": {
+      "homeless_veterans": 1548,
+      "homeless_veterans_sheltered": 866,
+      "homeless_veterans_unsheltered": 682,
+      "state_population": 10214860,
+      "homeless_per_100k": 15.15,
+      "sheltered_per_100k": 8.48,
+      "unsheltered_per_100k": 6.68
+    },
+    "HI": {
+      "homeless_veterans": 692,
+      "homeless_veterans_sheltered": 275,
+      "homeless_veterans_unsheltered": 417,
+      "state_population": 1431603,
+      "homeless_per_100k": 48.34,
+      "sheltered_per_100k": 19.21,
+      "unsheltered_per_100k": 29.13
+    },
+    "ID": {
+      "homeless_veterans": 249,
+      "homeless_veterans_sheltered": 174,
+      "homeless_veterans_unsheltered": 75,
+      "state_population": 1654930,
+      "homeless_per_100k": 15.05,
+      "sheltered_per_100k": 10.51,
+      "unsheltered_per_100k": 4.53
+    },
+    "IL": {
+      "homeless_veterans": 1226,
+      "homeless_veterans_sheltered": 769,
+      "homeless_veterans_unsheltered": 457,
+      "state_population": 12859995,
+      "homeless_per_100k": 9.53,
+      "sheltered_per_100k": 5.98,
+      "unsheltered_per_100k": 3.55
+    },
+    "IN": {
+      "homeless_veterans": 790,
+      "homeless_veterans_sheltered": 726,
+      "homeless_veterans_unsheltered": 64,
+      "state_population": 6619680,
+      "homeless_per_100k": 11.93,
+      "sheltered_per_100k": 10.97,
+      "unsheltered_per_100k": 0.97
+    },
+    "IA": {
+      "homeless_veterans": 207,
+      "homeless_veterans_sheltered": 175,
+      "homeless_veterans_unsheltered": 32,
+      "state_population": 3123899,
+      "homeless_per_100k": 6.63,
+      "sheltered_per_100k": 5.6,
+      "unsheltered_per_100k": 1.02
+    },
+    "KS": {
+      "homeless_veterans": 311,
+      "homeless_veterans_sheltered": 276,
+      "homeless_veterans_unsheltered": 35,
+      "state_population": 2911641,
+      "homeless_per_100k": 10.68,
+      "sheltered_per_100k": 9.48,
+      "unsheltered_per_100k": 1.2
+    },
+    "KY": {
+      "homeless_veterans": 591,
+      "homeless_veterans_sheltered": 541,
+      "homeless_veterans_unsheltered": 50,
+      "state_population": 4425092,
+      "homeless_per_100k": 13.36,
+      "sheltered_per_100k": 12.23,
+      "unsheltered_per_100k": 1.13
+    },
+    "LA": {
+      "homeless_veterans": 392,
+      "homeless_veterans_sheltered": 350,
+      "homeless_veterans_unsheltered": 42,
+      "state_population": 4670724,
+      "homeless_per_100k": 8.39,
+      "sheltered_per_100k": 7.49,
+      "unsheltered_per_100k": 0.9
+    },
+    "ME": {
+      "homeless_veterans": 151,
+      "homeless_veterans_sheltered": 142,
+      "homeless_veterans_unsheltered": 9,
+      "state_population": 1329328,
+      "homeless_per_100k": 11.36,
+      "sheltered_per_100k": 10.68,
+      "unsheltered_per_100k": 0.68
+    },
+    "MD": {
+      "homeless_veterans": 714,
+      "homeless_veterans_sheltered": 586,
+      "homeless_veterans_unsheltered": 128,
+      "state_population": 6006401,
+      "homeless_per_100k": 11.89,
+      "sheltered_per_100k": 9.76,
+      "unsheltered_per_100k": 2.13
+    },
+    "MA": {
+      "homeless_veterans": 1133,
+      "homeless_veterans_sheltered": 1101,
+      "homeless_veterans_unsheltered": 32,
+      "state_population": 6794422,
+      "homeless_per_100k": 16.68,
+      "sheltered_per_100k": 16.2,
+      "unsheltered_per_100k": 0.47
+    },
+    "MI": {
+      "homeless_veterans": 1067,
+      "homeless_veterans_sheltered": 991,
+      "homeless_veterans_unsheltered": 76,
+      "state_population": 9922576,
+      "homeless_per_100k": 10.75,
+      "sheltered_per_100k": 9.99,
+      "unsheltered_per_100k": 0.77
+    },
+    "MN": {
+      "homeless_veterans": 297,
+      "homeless_veterans_sheltered": 253,
+      "homeless_veterans_unsheltered": 44,
+      "state_population": 5489594,
+      "homeless_per_100k": 5.41,
+      "sheltered_per_100k": 4.61,
+      "unsheltered_per_100k": 0.8
+    },
+    "MS": {
+      "homeless_veterans": 206,
+      "homeless_veterans_sheltered": 87,
+      "homeless_veterans_unsheltered": 119,
+      "state_population": 2992333,
+      "homeless_per_100k": 6.88,
+      "sheltered_per_100k": 2.91,
+      "unsheltered_per_100k": 3.98
+    },
+    "MO": {
+      "homeless_veterans": 540,
+      "homeless_veterans_sheltered": 430,
+      "homeless_veterans_unsheltered": 110,
+      "state_population": 6083672,
+      "homeless_per_100k": 8.88,
+      "sheltered_per_100k": 7.07,
+      "unsheltered_per_100k": 1.81
+    },
+    "MT": {
+      "homeless_veterans": 277,
+      "homeless_veterans_sheltered": 98,
+      "homeless_veterans_unsheltered": 179,
+      "state_population": 1032949,
+      "homeless_per_100k": 26.82,
+      "sheltered_per_100k": 9.49,
+      "unsheltered_per_100k": 17.33
+    },
+    "NE": {
+      "homeless_veterans": 247,
+      "homeless_veterans_sheltered": 231,
+      "homeless_veterans_unsheltered": 16,
+      "state_population": 1896190,
+      "homeless_per_100k": 13.03,
+      "sheltered_per_100k": 12.18,
+      "unsheltered_per_100k": 0.84
+    },
+    "NV": {
+      "homeless_veterans": 860,
+      "homeless_veterans_sheltered": 516,
+      "homeless_veterans_unsheltered": 344,
+      "state_population": 2890845,
+      "homeless_per_100k": 29.75,
+      "sheltered_per_100k": 17.85,
+      "unsheltered_per_100k": 11.9
+    },
+    "NH": {
+      "homeless_veterans": 138,
+      "homeless_veterans_sheltered": 124,
+      "homeless_veterans_unsheltered": 14,
+      "state_population": 1330608,
+      "homeless_per_100k": 10.37,
+      "sheltered_per_100k": 9.32,
+      "unsheltered_per_100k": 1.05
+    },
+    "NJ": {
+      "homeless_veterans": 696,
+      "homeless_veterans_sheltered": 616,
+      "homeless_veterans_unsheltered": 80,
+      "state_population": 8958013,
+      "homeless_per_100k": 7.77,
+      "sheltered_per_100k": 6.88,
+      "unsheltered_per_100k": 0.89
+    },
+    "NM": {
+      "homeless_veterans": 278,
+      "homeless_veterans_sheltered": 214,
+      "homeless_veterans_unsheltered": 64,
+      "state_population": 2085109,
+      "homeless_per_100k": 13.33,
+      "sheltered_per_100k": 10.26,
+      "unsheltered_per_100k": 3.07
+    },
+    "NY": {
+      "homeless_veterans": 2399,
+      "homeless_veterans_sheltered": 2268,
+      "homeless_veterans_unsheltered": 131,
+      "state_population": 19795791,
+      "homeless_per_100k": 12.12,
+      "sheltered_per_100k": 11.46,
+      "unsheltered_per_100k": 0.66
+    },
+    "NC": {
+      "homeless_veterans": 1092,
+      "homeless_veterans_sheltered": 904,
+      "homeless_veterans_unsheltered": 188,
+      "state_population": 10042802,
+      "homeless_per_100k": 10.87,
+      "sheltered_per_100k": 9,
+      "unsheltered_per_100k": 1.87
+    },
+    "ND": {
+      "homeless_veterans": 137,
+      "homeless_veterans_sheltered": 90,
+      "homeless_veterans_unsheltered": 47,
+      "state_population": 756927,
+      "homeless_per_100k": 18.1,
+      "sheltered_per_100k": 11.89,
+      "unsheltered_per_100k": 6.21
+    },
+    "OH": {
+      "homeless_veterans": 1183,
+      "homeless_veterans_sheltered": 1073,
+      "homeless_veterans_unsheltered": 110,
+      "state_population": 11613423,
+      "homeless_per_100k": 10.19,
+      "sheltered_per_100k": 9.24,
+      "unsheltered_per_100k": 0.95
+    },
+    "OK": {
+      "homeless_veterans": 351,
+      "homeless_veterans_sheltered": 253,
+      "homeless_veterans_unsheltered": 98,
+      "state_population": 3911338,
+      "homeless_per_100k": 8.97,
+      "sheltered_per_100k": 6.47,
+      "unsheltered_per_100k": 2.51
+    },
+    "OR": {
+      "homeless_veterans": 1464,
+      "homeless_veterans_sheltered": 769,
+      "homeless_veterans_unsheltered": 695,
+      "state_population": 4028977,
+      "homeless_per_100k": 36.34,
+      "sheltered_per_100k": 19.09,
+      "unsheltered_per_100k": 17.25
+    },
+    "PA": {
+      "homeless_veterans": 1375,
+      "homeless_veterans_sheltered": 1295,
+      "homeless_veterans_unsheltered": 80,
+      "state_population": 12802503,
+      "homeless_per_100k": 10.74,
+      "sheltered_per_100k": 10.12,
+      "unsheltered_per_100k": 0.62
+    },
+    "RI": {
+      "homeless_veterans": 107,
+      "homeless_veterans_sheltered": 105,
+      "homeless_veterans_unsheltered": 2,
+      "state_population": 1056298,
+      "homeless_per_100k": 10.13,
+      "sheltered_per_100k": 9.94,
+      "unsheltered_per_100k": 0.19
+    },
+    "SC": {
+      "homeless_veterans": 681,
+      "homeless_veterans_sheltered": 470,
+      "homeless_veterans_unsheltered": 211,
+      "state_population": 4896146,
+      "homeless_per_100k": 13.91,
+      "sheltered_per_100k": 9.6,
+      "unsheltered_per_100k": 4.31
+    },
+    "SD": {
+      "homeless_veterans": 177,
+      "homeless_veterans_sheltered": 170,
+      "homeless_veterans_unsheltered": 7,
+      "state_population": 858469,
+      "homeless_per_100k": 20.62,
+      "sheltered_per_100k": 19.8,
+      "unsheltered_per_100k": 0.82
+    },
+    "TN": {
+      "homeless_veterans": 945,
+      "homeless_veterans_sheltered": 756,
+      "homeless_veterans_unsheltered": 189,
+      "state_population": 6600299,
+      "homeless_per_100k": 14.32,
+      "sheltered_per_100k": 11.45,
+      "unsheltered_per_100k": 2.86
+    },
+    "TX": {
+      "homeless_veterans": 2393,
+      "homeless_veterans_sheltered": 1490,
+      "homeless_veterans_unsheltered": 903,
+      "state_population": 27469114,
+      "homeless_per_100k": 8.71,
+      "sheltered_per_100k": 5.42,
+      "unsheltered_per_100k": 3.29
+    },
+    "UT": {
+      "homeless_veterans": 337,
+      "homeless_veterans_sheltered": 313,
+      "homeless_veterans_unsheltered": 24,
+      "state_population": 2995919,
+      "homeless_per_100k": 11.25,
+      "sheltered_per_100k": 10.45,
+      "unsheltered_per_100k": 0.8
+    },
+    "VT": {
+      "homeless_veterans": 119,
+      "homeless_veterans_sheltered": 113,
+      "homeless_veterans_unsheltered": 6,
+      "state_population": 626042,
+      "homeless_per_100k": 19.01,
+      "sheltered_per_100k": 18.05,
+      "unsheltered_per_100k": 0.96
+    },
+    "VA": {
+      "homeless_veterans": 604,
+      "homeless_veterans_sheltered": 513,
+      "homeless_veterans_unsheltered": 91,
+      "state_population": 8382993,
+      "homeless_per_100k": 7.21,
+      "sheltered_per_100k": 6.12,
+      "unsheltered_per_100k": 1.09
+    },
+    "WA": {
+      "homeless_veterans": 1293,
+      "homeless_veterans_sheltered": 886,
+      "homeless_veterans_unsheltered": 407,
+      "state_population": 7170351,
+      "homeless_per_100k": 18.03,
+      "sheltered_per_100k": 12.36,
+      "unsheltered_per_100k": 5.68
+    },
+    "WV": {
+      "homeless_veterans": 305,
+      "homeless_veterans_sheltered": 227,
+      "homeless_veterans_unsheltered": 78,
+      "state_population": 1844128,
+      "homeless_per_100k": 16.54,
+      "sheltered_per_100k": 12.31,
+      "unsheltered_per_100k": 4.23
+    },
+    "WI": {
+      "homeless_veterans": 534,
+      "homeless_veterans_sheltered": 515,
+      "homeless_veterans_unsheltered": 19,
+      "state_population": 5771337,
+      "homeless_per_100k": 9.25,
+      "sheltered_per_100k": 8.92,
+      "unsheltered_per_100k": 0.33
+    },
+    "WY": {
+      "homeless_veterans": 112,
+      "homeless_veterans_sheltered": 83,
+      "homeless_veterans_unsheltered": 29,
+      "state_population": 586107,
+      "homeless_per_100k": 19.11,
+      "sheltered_per_100k": 14.16,
+      "unsheltered_per_100k": 4.95
+    }
+  }
+}
