@@ -1,8 +1,14 @@
 ## 52vis challenges, week 2
 ## originally seen at
 ## https://rud.is/b/2016/04/06/52vis-week-2-2016-week-14-honing-in-on-the-homeless/
-## this version blogged @ jcarroll.com.au/
+## this version blogged @ http://jcarroll.com.au/2016/04/10/52vis-week-2-challenge/
 ## github: github.com/jonocarroll/2016-14
+
+## This script produces a chloropleth for the USA homeless population
+## as a per mille proportion of each state's population, with the
+## colorscale set to white at the national median, blue at the
+## lowest value, and capped at 3x the national median in red.
+## The yearly data is looped over in a .gif
 
 ## load relevant packages
 pacman::p_load(magrittr, dplyr, tidyr, ggplot2, httr, readxl, purrr)
@@ -10,6 +16,8 @@ pacman::p_load(data.table, maptools, broom, ggthemes, ggalt, viridis)
 pacman::p_load_gh("hrbrmstr/albersusa")
 pacman::p_load_gh("dgrtwo/gganimate")
 
+## git repository 2016-14 forked from https://github.com/52vis/2016-14.git
+## and new folder created
 setwd("jonocarroll")
 
 ## load the data from hudexchange.info (download once)
@@ -30,15 +38,15 @@ HUDdataDF %<>% map_at(c(3:ncol(.)), as.integer) %>% as_data_frame
 ## add a state column based on the 2-letter prefix of CoC Number
 HUDdataDF %<>% mutate(State=substr(`CoC Number`, 1, 2))
 
+## save a copy so we don't have to do that again
+save(HUDdataDF, file="HUDdata_data.frame.RData")
+
 ## sum the total homeless within each state
-## dtop the remaining columns, we'll work with those another time
+## drop the remaining columns, we'll work with those another time
 HUDdataDF %<>%
   select(Year, State, `Total Homeless`) %>%
   group_by(State, Year) %>%
   summarise(nHomeless=sum(`Total Homeless`))
-
-## save a copy so we don't have to do that again
-save(HUDdataDF, file="HUDdata_data.frame.RData")
 
 ## use the state populations courtesy of hrbrmstr
 uspop <- read.csv("../uspop.csv", stringsAsFactors=FALSE)
@@ -59,6 +67,9 @@ map_with_data <- HUDdataDF %>% merge(us_map, by.x="name", by.y="id") %>% mutate(
 ## make more than 3x the median value as a 'plus' group
 ## NB: this doesn't affect the median value
 map_with_data$HomelessProp[map_with_data$HomelessProp > 3*median(map_with_data$HomelessProp, na.rm=TRUE)] <- 3*median(map_with_data$HomelessProp, na.rm=TRUE)
+
+## save a copy so we don't have to do that again
+save(map_with_data, file="map_with_data_2016-14.RData")
 
 ## build the animated plot
 gg <- ggplot(map_with_data)
