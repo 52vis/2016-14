@@ -2,57 +2,80 @@ window.onload = function () {
   init(); 
 }
 
+var params = {};
+
 var limits = {
   "2011": {
     "homeless_per_100k_max": 83,
-    "sheltered_per_100k": 78.97,
-    "unsheltered_per_100k": 26.77
+    "sheltered_per_100k_max": 78.97,
+    "unsheltered_per_100k_max": 26.77
   },
   "2012": {
     "homeless_per_100k_max": 83.58,
-    "sheltered_per_100k": 73.35,
-    "unsheltered_per_100k": 31.71
+    "sheltered_per_100k_max": 73.35,
+    "unsheltered_per_100k_max": 31.71
   },
   "2013": {
     "homeless_per_100k_max": 76.82,
-    "sheltered_per_100k": 66.97,
-    "unsheltered_per_100k": 25.01
+    "sheltered_per_100k_max": 66.97,
+    "unsheltered_per_100k_max": 25.01
   },
   "2014": {
     "homeless_per_100k_max": 61.53,
-    "sheltered_per_100k": 56.83,
-    "unsheltered_per_100k": 24.36
+    "sheltered_per_100k_max": 56.83,
+    "unsheltered_per_100k_max": 24.36
   },
   "2015": {
     "homeless_per_100k_max": 60.69,
-    "sheltered_per_100k": 54.45,
-    "unsheltered_per_100k": 29.13
+    "sheltered_per_100k_max": 54.45,
+    "unsheltered_per_100k_max": 29.13
   }
-}
+};
 
 function init(){
-  for (var i = 2015; i >=2011; i--) {
-    draw(i);
-  }
+  set_params();
+  set_headings();
+  draw(2015);
+};
+
+function set_params() {
+  params = {
+    "chart_width" : $('#chart').width(),
+    "chart_height": $('#chart').width() / 1.6 ,
+    "chart_year": $('#chart_year').find(':selected').val(),
+    "chart_dataset": $('#chart_dataset').find(':selected').val(),
+  };
 }
+function set_headings() {
+  $('#selected_year').text(params.chart_year);
+  $('#selected_dataset').text(params.chart_dataset);
+}
+
+function redraw() {
+  set_params();
+  set_headings();
+  $('svg > path').remove();
+  draw(params.chart_year);
+};
 
 function draw(year) {
   var homeless_data = d3.map();
-  var width = 960,
-      height = 600;
+  var width = params.chart_width,
+      height = params.chart_height;
   
   var quantize = d3.scale.quantize()
-    .domain([0, limits[year]['homeless_per_100k_max']])
+    .domain([0, limits[year][params.chart_dataset+'_per_100k_max']])
     .range(d3.range(9).map(function(i) { return "q" + i + "-9"; }));
 
   var projection = d3.geo.albersUsa()
-      .scale(1280)
+      .scale(params.chart_height*2)
       .translate([width / 2, height / 2]);
   
   var path = d3.geo.path()
       .projection(projection);
   
-  var svg = d3.select(".svg"+year);
+  var svg = d3.select(".svg");
+  svg.attr("width", width).attr("height", height)
   
   queue()
     .defer(d3.json, "./us.json")
@@ -63,7 +86,7 @@ function draw(year) {
     if (error) throw error;
 
     for (var state in homeless[year]) {
-      homeless_data.set(state, homeless[year][state]['homeless_per_100k']);
+      homeless_data.set(state, homeless[year][state][params.chart_dataset+'_per_100k']);
     }
 
     var states = topojson.feature(us, us.objects.states),
