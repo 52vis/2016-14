@@ -40,21 +40,21 @@ function init(){
 
 function set_params() {
   params = {
-    "chart_width" : $('#chart').width(),
-    "chart_height": $('#chart').width() / 1.6 ,
-    "chart_year": $('#chart_year').find(':selected').val(),
-    "chart_dataset": $('#chart_dataset').find(':selected').val(),
+    "chart_width" : $('#data_viz_2016_14 #chart').width(),
+    "chart_height": $('#data_viz_2016_14 #chart').width() / 1.6 ,
+    "chart_year": $('#data_viz_2016_14 #chart_year').find(':selected').val(),
+    "chart_dataset": $('#data_viz_2016_14 #chart_dataset').find(':selected').val(),
   };
 }
 function set_headings() {
-  $('#selected_year').text(params.chart_year);
-  $('#selected_dataset').text(params.chart_dataset);
+  $('#data_viz_2016_14 #selected_year').text(params.chart_year);
+  $('#data_viz_2016_14 #selected_dataset').text(params.chart_dataset);
 }
 
 function redraw() {
   set_params();
   set_headings();
-  $('svg > path').remove();
+  $('#data_viz_2016_14 svg > path').remove();
   draw(params.chart_year);
 };
 
@@ -74,7 +74,7 @@ function draw(year) {
   var path = d3.geo.path()
       .projection(projection);
   
-  var svg = d3.select(".svg");
+  var svg = d3.select("#data_viz_2016_14 .svg");
   svg.attr("width", width).attr("height", height)
   
   queue()
