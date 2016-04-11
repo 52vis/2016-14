@@ -77,10 +77,17 @@ function draw(year) {
   var svg = d3.select("#data_viz_2016_14 .svg");
   svg.attr("width", width).attr("height", height)
   
+  // Dev files
   queue()
     .defer(d3.json, "./us.json")
     .defer(d3.json, "./normalized_data.json")
     .await(ready);
+
+  // Prod files
+  //queue()
+  //  .defer(d3.json, "/js/52viz/2016-14/us.json")
+  //  .defer(d3.json, "/js/52viz/2016-14/normalized_data.json")
+  //  .await(ready);
 
   function ready(error, us, homeless) {
     if (error) throw error;
