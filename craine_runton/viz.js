@@ -165,6 +165,19 @@ function draw(year) {
       .datum(topojson.mesh(us, us.objects.states, function(a, b) { return a !== b; }))
       .attr("class", "states")
       .attr("d", path); 
+
+    svg.append("g")
+      .attr("class", "legendQuant")
+      .attr("transform", "translate("+params.chart_width * .72+",20)");
+
+    var legend = d3.legend.color()
+      .labelFormat(d3.format(".2f"))
+      .useClass(true)
+      .ascending(true)
+      .scale(quantize);
+
+    svg.select(".legendQuant")
+      .call(legend);
   
   }
   
