@@ -71,13 +71,15 @@ states <- left_join(states,state_funding) %>%
   group_by(state, year) %>%
   arrange
 
-nudges <- data_frame(nudge_x = c(0, 0, 0, 100000, 0, 100000, -100000, 100000), nudge_y = c(-25, -25, -25, 25, -50, 25, -25, -25))
+nudges <- data_frame(nudge_x = c(0, 0, 0, 100000, -10000000, 10000000, -10000000, 100000), nudge_y = c(-2500, -2500, -2500, 2500, 0, 0, -2500, -2500))
 
 plot_data <- states %>%
   group_by(year) %>%
   summarize_each(
     funs(sum(., na.rm = TRUE)),
     funding,
+    total_funding,
+    total_homeless,
     total_homeless_per_100k,
     sheltered_homeless_per_100k,
     unsheltered_homeless_per_100k
@@ -86,16 +88,16 @@ plot_data <- states %>%
 
 
 # Epoca temporal scatterplot
-gg <- ggplot(plot_data, aes(x = funding, y = total_homeless_per_100k))
+gg <- ggplot(plot_data, aes(x = total_funding, y = total_homeless))
 gg <- gg + ggalt:::geom_xspline2(aes(s_open = TRUE, s_shape = 0.6, size = 8))
 gg <- gg + geom_point(aes(group = year), size = 3, pch = 21, fill = "black", color = "white")
-gg <- gg + geom_text(aes(label = year, y = total_homeless_per_100k + nudge_y, x = funding + nudge_x), family = "Oswald Light", vjust = "inward")
-gg <- gg + scale_x_continuous(labels = scales::dollar, limits = c(21000000,28000000))
-gg <- gg + scale_y_continuous(labels = scales::comma, limits = c(9000, 10500))
+gg <- gg + geom_text(aes(label = year, y = total_homeless + nudge_y, x = total_funding + nudge_x), family = "Oswald Light")
+gg <- gg + scale_x_continuous(labels = scales::dollar, limits = c(1300000000,1790000000))
+gg <- gg + scale_y_continuous(labels = scales::comma, limits = c(565000, 650000))
 #gg <- gg + facet_wrap(~name, scales="free", ncol=6)
 gg <- gg + labs(x = NULL, y = NULL,
                 title="Temporal Scatterplot of US Department of Housing & Urban Development (HUD) Unsheltered (Estimated) Homeless Population contrasted with HUD Continuum of Care Program (CoC) Funding",
-                subtitle="Year aggregates calculated from HUD Communities of Care Regional Surveys and CPD Allocations and Awards (both normalized per 100K population)",
+                subtitle="Year aggregates calculated from HUD Communities of Care Regional Surveys and CPD Allocations and Awards",
                 caption="\nHomeless population data from: https://www.hudexchange.info/resource/4832/2015-ahar-part-1-pit-estimates-of-homelessness/\nCoC program Funding data from: https://www.hudexchange.info/grantees/cpd-allocations-awards/")
 
 gg <- gg + theme(text = element_text(family = "Oswald Light", size = 12, color = "grey20"))
