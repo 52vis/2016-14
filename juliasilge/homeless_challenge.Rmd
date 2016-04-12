@@ -1,0 +1,139 @@
+---
+title: "Where Are There More Homeless Youth?"
+author: "Julia Silge"
+date: "April 11, 2016"
+output: html_document
+---
+
+```{r, echo = FALSE, warning = FALSE}
+library(knitr)
+knitr::opts_chunk$set(cache = TRUE, warning = FALSE, message = FALSE)
+```
+
+Bob Rudis runs a [weekly visualization challenge](https://rud.is/b/2016/04/06/52vis-week-2-2016-week-14-honing-in-on-the-homeless/) with some interesting data to work with each week; this week's challenge involves a census of the homeless population in each state from the U.S. Department of Housing and Urban Development.
+
+First, let's download the Excel file.
+
+```{r}
+URL <- "https://www.hudexchange.info/resources/documents/2007-2015-PIT-Counts-by-CoC.xlsx"
+fil <- basename(URL)
+if (!file.exists(fil)) download.file(URL, fil, mode="wb")
+```
+
+Next, let's read the Excel file into R and turn it into a data frame (cleaned up a bit) with the same exact code from Bob's example R script.
+
+```{r}
+library(purrr)
+library(readxl)
+library(stringr)
+library(dplyr)
+yrs <- 2015:2007
+names(yrs) <- 1:9
+homeless <- map_df(names(yrs), function(i) {
+  df <- suppressWarnings(read_excel(fil, as.numeric(i)))
+  df[,3:ncol(df)] <- suppressWarnings(lapply(df[,3:ncol(df)], as.numeric))
+  new_names <- tolower(make.names(colnames(df)))
+  new_names <- str_replace_all(new_names, "\\.+", "_")
+  df <- setNames(df, str_replace_all(new_names, "_[[:digit:]]+$", ""))
+  bind_cols(df, data_frame(year=rep(yrs[i], nrow(df))))
+})
+
+homeless <- mutate(homeless,
+                   state=str_match(coc_number, "^([[:alpha:]]{2})")[,2],
+                   coc_name=str_replace(coc_name, " CoC$", ""))
+homeless <- select(homeless, year, state, everything())
+homeless <- filter(homeless, !is.na(state))
+```
+
+There is lots of information that HUD has worked to include in this estimate of the homeless population. What exactly is here?
+
+```{r}
+names(homeless)
+```
+
+One thing that struck my interest in these data is what the proportion of homeless youth is across the country. One of my friends here in Salt Lake City is the director of Salt Lake's [Youth Resource Center](http://www.voaut.org/homeless-teen-services) (for homeless youth) and I have learned a good bit from her about homeless youth, why they can end up homeless (abuse, LGBT kids kicked out of their homes, kids who age out of foster care, etc), and the things that her organization does to try to help. I was not sure ahead of time if Salt Lake had an especially large or small proportion of homeless youth compared to the rest of the homeless population, but here we have some data to try to see. Let's check it out.
+
+I'm only going to look at the most recent year in this census of the homeless population, 2015. To start, I'm not going to group by state so that I can see which of the community areas in the census have the largest proportion of youth in their homeless populations.
+
+```{r}
+homelessyouth <- homeless %>% filter(year == "2015") %>% 
+        select(state, coc_number, coc_name, homeless_unaccompanied_youth_under_25, total_homeless) %>%
+        mutate(percent_youth = homeless_unaccompanied_youth_under_25/total_homeless) %>%
+        arrange(desc(percent_youth))
+```
+
+At this point in the data frame, there are a few communities that have high proportions of homeless youth but pretty low homeless populations; I'm not sure if they are that useful for trying to answer this question. Is it interesting that West Central Illinois has 100 homeless individuals and 27 of them are under 25? Maybe, but for the purposes of this visualization, I'm going to just focus on communities that have larger homeless populations. I'll filter to only keep communities with total homeless populations of 1000 or more.
+
+```{r}
+homelessyouth <- homelessyouth %>% filter(total_homeless > 1000) %>% 
+        top_n(15, percent_youth) %>%
+        mutate(coc_name = factor(coc_name, levels = rev(unique(coc_name))))
+```
+
+Now let's see what this looks like.
+
+```{r, fig.height=8, fig.width=10}
+library(ggplot2)
+library(ggstance)
+library(ggalt)
+ggplot(homelessyouth, aes(x = 100*percent_youth, y = coc_name)) +
+        geom_barh(stat="identity", aes(fill = percent_youth)) +
+        geom_stateface(aes(y=coc_name, x=1, label=state), colour="white", size=8) +
+        geom_text(aes(x = 2.3, y = coc_name, label = state), color="white",
+                  family="Roboto-Bold", size=5) +
+        labs(title = "Where Are There More Homeless Youth?",
+             subtitle = "Communities with 1000 homeless individuals or more that have high proportions of homeless youth",
+             y = NULL, x = "Percent of homeless individuals that are unaccompanied youth under 25",
+             caption = "Data from https://www.hudexchange.info/resource/4832/2015-ahar-part-1-pit-estimates-of-homelessness/") +
+        scale_fill_gradient(low = "darkseagreen3", high = "darkolivegreen") +
+        theme_minimal(base_family = "RobotoCondensed-Regular", base_size = 12) +
+        theme(plot.title=element_text(family="Roboto-Bold")) +
+        theme(legend.position = "none") +
+        scale_x_continuous(expand=c(0,0)) +
+        theme(plot.caption=element_text(size=7)) +
+        theme(plot.caption=element_text(margin=margin(t=10)))
+```
+
+
+I know, it's more `geom_stateface`! But *I* haven't made any yet, and I really have been wanting to.
+
+That is pretty interesting, but perhaps we would like to know which states overall have the highest proportion of youth in their homeless populations. Let's look at that.
+
+```{r}
+homelessyouth <- homeless %>% filter(year == "2015") %>% 
+        select(state, homeless_unaccompanied_youth_under_25, total_homeless) %>% 
+        group_by(state) %>%
+        summarise(total_homeless = sum(total_homeless), 
+                  homeless_unaccompanied_youth_under_25 = sum(homeless_unaccompanied_youth_under_25)) %>%
+        mutate(percent_youth = homeless_unaccompanied_youth_under_25/total_homeless) %>%
+        arrange(desc(percent_youth)) %>%        
+        top_n(15, percent_youth) %>%
+        mutate(state = factor(state, levels = rev(unique(state))))
+```
+
+What does this look like?
+
+```{r, fig.height=8, fig.width=10}
+ggplot(homelessyouth, aes(x = 100*percent_youth, y = state)) +
+        geom_barh(stat="identity", aes(fill = percent_youth)) +
+        geom_stateface(aes(y=state, x=1, label=as.character(state)), colour="white", size=8) +
+        geom_text(aes(x = 2.2, y = state, label=as.character(state)), color="white",
+                  family="Roboto-Bold", size=5) +
+        labs(title = "Where Are There More Homeless Youth?",
+             subtitle = "States with the highest proportions of homeless youth",
+             y = NULL, x = "Percent of homeless individuals that are unaccompanied youth under 25",
+             caption = "Data from https://www.hudexchange.info/resource/4832/2015-ahar-part-1-pit-estimates-of-homelessness/") +
+        scale_fill_gradient(low = "darkseagreen4", high = "darkolivegreen") +
+        theme_minimal(base_family = "RobotoCondensed-Regular", base_size = 12) +
+        theme(plot.title=element_text(family="Roboto-Bold")) +
+        theme(legend.position = "none") +
+        scale_x_continuous(expand=c(0,0)) +
+        theme(axis.text.y=element_blank()) +
+        theme(plot.caption=element_text(size=7)) +
+        theme(plot.caption=element_text(margin=margin(t=10)))
+```
+
+Nevada is still at the top with the highest proportion of unaccompanied youth in its homeless population. Notice that the rest of the states here have proportions that are quite a bit lower than the city or subdivided geographical regions we looked at earlier. Think about what that must mean, for example, for the homeless population of California as a whole compared to the CA communities in the first plot.
+
+And where did Salt Lake and Utah end up in all of this? Utah is actually 42nd out of 54 in its proportion of youth in its homeless population in the state/state-like geographic regions, so on the low end. Salt Lake City comes in at spot 111 out of 135 of the regions with 1000 or more homeless individuals in its proportion of youth in its homeless popuation, so again, on the lower end. Looking at those numbers makes me question how reliable this census is, however. This census says that are 2176 total homeless in Salt Lake City/County, and 72 homeless youth under 25. The Youth Resource Center where my friend is the director serves about 800 homeless youth a year. Now, she has told me that many of them are transient, coming through SLC on the way to other cities (often on the way to Las Vegas, actually), but is it possible there are less than 100 homeless youth in Salt Lake at any one time? Anyway, I don't know that homeless youth are being undercounted more than homeless people in general, and certainly counting the homeless population [must be extremely difficult](http://fusion.net/story/49980/why-counting-americas-homeless-is-both-imperative-and-imperfect/). The data visualizations I did here depend on the rate of undercount being about the same for homeless youth as the homeless population in general (which I could see going either way) and the rate of undercount being about the same across the country (again, this could be true or not).
+
