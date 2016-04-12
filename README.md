@@ -1,6 +1,6 @@
 ## 52Vis Week 2 (2016-14)
 
-You can read about my musings and approach and see my approach [here](jkaupp.github.io)
+You can read about my musings and approach and see my approach [here](https://jkaupp.github.io)
 
 ### National Level
 ![](National level HUD v CoC Funding.png)
