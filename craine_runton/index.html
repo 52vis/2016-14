@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>52viz - Week 14</title>
+
+    <meta content="Version 0.0.1">
+
+    <link rel="stylesheet" href="/css/bootstrap/bootstrap.min.css"   type="text/css"/>
+    <link rel="stylesheet" href="/css/ionicons/ionicons.min.css"     type="text/css"/>
+    <link rel="stylesheet" href="/css/animate/animate.min.css"       type="text/css"/>
+
+    <script src="/js/jquery/jquery-2.2.2.min.js"          ></script>
+    <script src="/js/bootstrap/bootstrap.min.js"          ></script>
+    <script src="/js/d3/d3.min.js"                        ></script>
+    <script src="/js/d3/d3-legend.js"                     ></script>
+    <script src="/js/handlebars/handlebars-v4.0.5.min.js" ></script>
+    <script src="//d3js.org/queue.v1.min.js"              ></script>
+    <script src="//d3js.org/topojson.v1.min.js"           ></script>
+    <script src="./viz.js"                                ></script>
+
+    <style>
+#data_viz_2016_14 #update_chart { margin-top: 10px; }
+#data_viz_2016_14 svg {
+  display: block;
+  margin: 10px auto 50px;
+}
+#data_viz_2016_14 .counties {
+  fill: none;
+  stroke: none;
+}
+#data_viz_2016_14 .states {
+  fill: none;
+  stroke-width: 0.2;
+  stroke: rgb(8,48,107);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q0-9 {
+  fill:rgb(255,238,238); 
+  stroke-width: 0.2;
+  stroke: rgb(222,235,247);
+  stroke-linejoin: round;
+} 
+#data_viz_2016_14 .q1-9 {
+  fill:rgb(241,209,208); 
+  stroke-width: 0.2;
+  stroke: rgb(198,219,239);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q2-9 {
+  fill:rgb(227,180,179); 
+  stroke-width: 0.2;
+  stroke: rgb(158,202,225);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q3-9 {
+  fill:rgb(213,152,150); 
+  stroke-width: 0.2;
+  stroke: rgb(107,174,214);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q4-9 {
+  fill:rgb(200,123,121); 
+  stroke-width: 0.2;
+  stroke: rgb(66,146,198);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q5-9 { 
+  fill:rgb(186,94,92); 
+  stroke-width: 0.2;
+  stroke: rgb(33,113,181);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q6-9 { 
+  fill:rgb(172,66,63); 
+  stroke-width: 0.2;
+  stroke: rgb(8,81,156);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q7-9 { 
+  fill:rgb(158,37,34); 
+  stroke-width: 0.2;
+  stroke: rgb(8,48,107);
+  stroke-linejoin: round;
+}
+#data_viz_2016_14 .q8-9 { 
+  fill:rgb(145,9,5); 
+  stroke-width: 0.2;
+  stroke: rgb(8,48,107);
+  stroke-linejoin: round;
+}
+    </style>
+  </head>
+  <body>
+    <div id="data_viz_2016_14" class="container">
+      <div class="row">
+        <div class="col-xs-12"><h1>Week 14, Homeless Veteran Population</h1></div>
+      </div>      
+      <div class="row">
+        <div class="col-xs-12">
+          <h2><span id="selected_year">2015</span> - All <span id="selected_dataset">homeless</span> vets</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <label for="chart_year">Choose the year</span></label>
+          <select id="chart_year" class="c-select form-control col-sm-6">
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015" selected>2015</option>
+          </select>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <label for="chart_dataset">Choose which dataset to view</span></label>
+          <select id="chart_dataset" class="c-select form-control col-sm-6">
+            <option value="homeless" selected>All homeless vets</option>
+            <option value="sheltered">Sheltered vets</option>
+            <option value="unsheltered">Unsheltered vets</option>
+          </select>
+        </div>
+        <div class="col-xs-12 text-center">
+          <button id="update_chart" class="btn btn-primary col-xs-12" onclick="redraw()">Update chart</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="chart">
+            <svg class="svg" version="1.1"
+                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+                <filter id="f3" x="-0.1" y="-0.1" width="400%" height="400%">
+                  <feOffset result="offOut" in="SourceAlpha" dx="1" dy="1"></feOffset>
+                  <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1"></feGaussianBlur>
+                  <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
+                </filter>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
