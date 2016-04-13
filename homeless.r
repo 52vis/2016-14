@@ -1,79 +1,35 @@
-library(readxl)
-library(purrr)
-library(dplyr)
-library(tidyr)
-library(stringr)
-library(ggplot2)
-library(scales)
-library(grid)
-library(hrbrmisc)
+#Who takes care of their veterans? (script)
+#Note, you need to reformat the cells in the Excel sheet so they don't 
+#automatically insert commas above a thousand (ie 1,024->1024)
 
-# grab the HUD homeless data
+#Grab the 2015 data as a csv
+data<-read.csv(file.choose())
 
-URL <- "https://www.hudexchange.info/resources/documents/2007-2015-PIT-Counts-by-CoC.xlsx"
-fil <- basename(URL)
-if (!file.exists(fil)) download.file(URL, fil, mode="wb")
+#Now just the data we want
+df<-data[, c("State", "Homeless.Veterans..2015", "Sheltered.Homeless.Veterans..2015", "Unsheltered.Homeless.Veterans..2015")]
 
-# turn the excel tabs into a long data.frame
-yrs <- 2015:2007
-names(yrs) <- 1:9
-homeless <- map_df(names(yrs), function(i) {
-  df <- suppressWarnings(read_excel(fil, as.numeric(i)))
-  df[,3:ncol(df)] <- suppressWarnings(lapply(df[,3:ncol(df)], as.numeric))
-  new_names <- tolower(make.names(colnames(df)))
-  new_names <- str_replace_all(new_names, "\\.+", "_")
-  df <- setNames(df, str_replace_all(new_names, "_[[:digit:]]+$", ""))
-  bind_cols(df, data_frame(year=rep(yrs[i], nrow(df))))
-})
+#Now a new column in df showing Unsheltered Homeless veterans as a percentage of all Homeless Veterans
+df$value<-df$Unsheltered.Homeless.Veterans..2015/df$Homeless.Veterans..2015
 
-# clean it up a bit
-homeless <- mutate(homeless,
-                   state=str_match(coc_number, "^([[:alpha:]]{2})")[,2],
-                   coc_name=str_replace(coc_name, " CoC$", ""))
-homeless <- select(homeless, year, state, everything())
-homeless <- filter(homeless, !is.na(state))
-
-# read in the us population data
-uspop <- read.csv("uspop.csv", stringsAsFactors=FALSE)
-uspop_long <- gather(uspop, year, population, -name, -iso_3166_2)
-uspop_long$year <- sub("X", "", uspop_long$year)
-
-# normalize the values
-states <- count(homeless, year, state, wt=total_homeless)
-states <- left_join(states, albersusa::usa_composite()@data[,3:4], by=c("state"="iso_3166_2"))
-states <- ungroup(filter(states, !is.na(name)))
-states$year <- as.character(states$year)
-states <- mutate(left_join(states, uspop_long), homeless_per_100k=(n/population)*100000)
-
-# we want to order from worst to best
-group_by(states, name) %>%
-  summarise(mean=mean(homeless_per_100k, na.rm=TRUE)) %>%
-  arrange(desc(mean)) -> ordr
-
-states$year <- factor(states$year, levels=as.character(2006:2016))
-states$name <- factor(states$name, levels=ordr$name)
-
-# plot
-#+ fig.retina=2, fig.width=10, fig.height=15
-gg <- ggplot(states, aes(x=year, y=homeless_per_100k))
-gg <- gg + geom_segment(aes(xend=year, yend=0), size=0.33)
-gg <- gg + geom_point(size=0.5)
-gg <- gg + scale_x_discrete(expand=c(0,0),
-                            breaks=seq(2007, 2015, length.out=5),
-                            labels=c("2007", "", "2011", "", "2015"),
-                            drop=FALSE)
-gg <- gg + scale_y_continuous(expand=c(0,0), labels=comma, limits=c(0,1400))
-gg <- gg + labs(x=NULL, y=NULL,
-                title="US Department of Housing & Urban Development (HUD) Total (Estimated) Homeless Population",
-                subtitle="Counts aggregated from HUD Communities of Care Regional Surveys (normalized per 100K population)",
-                caption="Data from: https://www.hudexchange.info/resource/4832/2015-ahar-part-1-pit-estimates-of-homelessness/")
-gg <- gg + facet_wrap(~name, scales="free", ncol=6)
-gg <- gg + theme_hrbrmstr_an(grid="Y", axis="", strip_text_size=9)
-gg <- gg + theme(axis.text.x=element_text(size=8))
-gg <- gg + theme(axis.text.y=element_text(size=7))
-gg <- gg + theme(panel.margin=unit(c(10, 10), "pt"))
-gg <- gg + theme(panel.background=element_rect(color="#97cbdc44", fill="#97cbdc44"))
-gg <- gg + theme(plot.margin=margin(10, 20, 10, 15))
-gg
+#Ok, now to generate the choropleth
+#get our library
+library(choroplethr)
 
 
+#Ok, so now we need to match up the state names from our data with those the choroplethr package accepts
+#Now there might be an elegant solution but ain't nobody got time for dat
+#So we just manually insert them as a vector of strings
+#also Guam, Puerto Rico, Virgin Islands, and Total  get dropped
+df$region<-c("alaska", "alabama", "arkansas", "arizona", "california", "colorado", "connecticut", "district of columbia", "delaware", 
+             "florida", "georgia", "CUT", "hawaii", "iowa", "idaho", "illinois", "indiana", "kansas", "kentucky", "louisiana", 
+             "massachusetts", "maryland", "maine", "michigan", "minnesota", "missouri", "mississippi", "montana", "north carolina",
+             "north dakota", "nebraska", "new hampshire", "new jersey", "new mexico", "nevada", "new york", "ohio", "oklahoma", "oregon",
+             "pennsylvania", "CUT", "rhode island", "south carolina", "south dakota", "tennessee", "texas", "utah", "virginia", "CUT", 
+             "vermont", "washington", "wisconsin", "west virginia", "wyoming", "CUT" )
+project<-df[df$region!="CUT", c("region", "value")]
+
+#Ugh, now we reorder the rows to match choroplethr
+project<-project[order(project$region),]
+
+#And now the choropleth
+state_choropleth(project, title="Worst states for veterans", legend="Percent of homeless veterans without shelter", num_colors = 4)
