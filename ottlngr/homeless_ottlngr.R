@@ -1,0 +1,86 @@
+library(readxl)
+library(purrr)
+library(dplyr)
+library(tidyr)
+library(stringr)
+library(ggplot2)
+
+# grab the HUD homeless data
+
+URL <- "https://www.hudexchange.info/resources/documents/2007-2015-PIT-Counts-by-CoC.xlsx"
+fil <- basename(URL)
+if (!file.exists(fil)) download.file(URL, fil, mode="wb")
+
+# turn the excel tabs into a long data.frame
+yrs <- 2015:2007
+names(yrs) <- 1:9
+homeless <- map_df(names(yrs), function(i) {
+  df <- suppressWarnings(read_excel(fil, as.numeric(i)))
+  df[,3:ncol(df)] <- suppressWarnings(lapply(df[,3:ncol(df)], as.numeric))
+  new_names <- tolower(make.names(colnames(df)))
+  new_names <- str_replace_all(new_names, "\\.+", "_")
+  df <- setNames(df, str_replace_all(new_names, "_[[:digit:]]+$", ""))
+  bind_cols(df, data_frame(year=rep(yrs[i], nrow(df))))
+})
+
+# clean it up a bit
+homeless <- mutate(homeless,
+                   state=str_match(coc_number, "^([[:alpha:]]{2})")[,2],
+                   coc_name=str_replace(coc_name, " CoC$", ""))
+homeless <- select(homeless, year, state, everything())
+homeless <- filter(homeless, !is.na(state))
+########################################################################
+########################################################################
+
+homeless <- homeless[, c("year",
+                         "state",
+                         "total_homeless",
+                         "homeless_veterans",
+                         "homeless_unaccompanied_youth_under_25",
+                         "homeless_unaccompanied_children_under_18")]
+
+homeless <- aggregate(. ~ year + state, homeless, sum)
+homeless <- homeless[homeless$year == 2015, ]
+
+homeless$total_homeless_rate <- homeless$total_homeless / sum(homeless$total_homeless)
+homeless$homeless_veterans_rate <- homeless$homeless_veterans / sum(homeless$homeless_veterans)
+homeless$homeless_unacc_u25_rate <- homeless$homeless_unaccompanied_youth_under_25 / sum(homeless$homeless_unaccompanied_youth_under_25)
+homeless$homeless_unacc_u18_rate <- homeless$homeless_unaccompanied_children_under_18 / sum(homeless$homeless_unaccompanied_children_under_18)
+
+homeless <- homeless[, c("year", "state", "total_homeless_rate", "homeless_veterans_rate", "homeless_unacc_u25_rate", "homeless_unacc_u18_rate")]
+homeless <- gather(homeless, group, rate, homeless_veterans_rate, homeless_unacc_u25_rate, homeless_unacc_u18_rate)
+
+annotations <- homeless[homeless$state %in% c("CA", "NV", "FL", "OR", "NY"), ]
+
+homeless_plot <- ggplot(homeless, aes(x = total_homeless_rate, y = rate, colour = factor(group, labels = c("Unaccompanied under 18", "Unaccompanied under 25", "Veterans")))) +
+  geom_abline(slope = 1, colour = "orange2", linetype = 2, lwd = 0.5) +
+  geom_point() +
+  #coord_fixed(ratio = 1) +
+  scale_colour_brewer(palette = "Dark2") +
+  scale_x_continuous(expand = c(0, 0), limits = c(0, 0.22)) +
+  scale_y_continuous(expand = c(0, 0), limits = c(0, 0.31)) +
+  annotate("text", x = annotations$total_homeless_rate, y = annotations$rate, label = annotations$state, hjust = 1.3, vjust = 1, size = 4) +
+  labs(x = "Share on total number of homeless",
+       y = "Share on subgroups of homeless",
+       title = "Homeless - Homogenous groups?",
+       subtitle = "Shares on total number and subgroups of homeless.\nData by state for 2015.",
+       colour = "Group",
+       caption = "\nData source: U.S. Department of Housing and Urban Development") +
+  theme(panel.grid.major = element_line(colour = "gray", linetype = "dotted"),
+        panel.grid.minor = element_blank(),
+        panel.background = element_rect(fill = "whitesmoke"),
+        axis.ticks = element_line(linetype = "blank"),
+        axis.title = element_text(face = "bold", colour = "whitesmoke"),
+        axis.text = element_text(size = 9, colour = "gray0"),
+        plot.title = element_text(size = 16, face = "bold", colour = "whitesmoke"),
+        legend.text = element_text(size = 8),
+        legend.title = element_text(size = 8),
+        plot.background = element_rect(fill = "cadetblue"),
+        legend.background = element_rect(fill = "grey95", colour = "black", linetype = "solid"),
+        legend.position = c(0.2, 0.90),
+        plot.caption = element_text(size = 8),
+        plot.margin = unit(c(0.2, 0.4, 0.2, 0.2), "cm"))
+
+ggsave("./ottlngr/homeless_plot.pdf", homeless_plot, width = 6, height = 8)
+ggsave("./ottlngr/homeless_plot.png", homeless_plot, width = 6, height = 8)
+
